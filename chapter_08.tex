@@ -1,0 +1,62 @@
+Take a point with coordinates $z^\mu$ and suppose it moves along a track; we 
+then have a function of some parameter $\tau$. Put $dz^\mu / d\tau = 
+u^\mu$.
+
+There is a vector $u^\mu$ at each point of the track. Suppose that as we go 
+along the track the vector $u^\mu$ gets shifted by parallel displacement. Then 
+the whole track is determined if we are given the initial point and the initial 
+value of the vector $u^\mu$. We just have to shift the initial point from 
+$z^\mu$ to $z^\mu + u^\mu d\tau$, then shift the vector $u^\mu$ to this new 
+point by parallel displacement, then shift the point again in the direction 
+fixed by the new  $u^\mu$, and so on. Not only is the track determined, but 
+also the parameter $\tau$ along it. A track produced this way is called a 
+geodesic.
+
+If the vector $u^\mu$ is a null vector, it always remains a null vector and the 
+track is called a null geodesic. If the vector $u^\mu$ is initially timelike 
+(i.e., $u^\mu u_\mu > 0$), it is always timelike and we have a timelike 
+geodesic. Similarly if $u^\mu$ is initially spacelike ($u^\mu u_\mu < 0$), it 
+is always spacelike and we have a spacelike geodesic.
+
+We get the equations of a geodesic by applying (\ref{ecuacion 7.11}) with 
+$B^\nu = u^\nu$ and $dx^\sigma = dz^\sigma$. Thus 
+\begin{equation}
+ \label{ecuacion 8.1}
+ \frac{d u^\nu}{d\tau} 
+       + \Gamma^\nu_{\mu\sigma} u^\mu \frac{dz^\sigma}{d\tau} = 0
+\end{equation}
+or
+\begin{equation}
+ \label{ecuacion 8.2}
+ \frac{d^2 z }{d \tau^2} =
+      + \Gamma^\nu_{\mu\sigma} \frac{dz^\mu}{d\tau} \frac{dz^\sigma}{d\tau}  
+      = 0
+\end{equation}
+
+For a timelike geodesic we may multiply the initial $u^\nu$ by a factor so as 
+to make its length unity. This merely requires a change in the scale of $\tau$. 
+The vector $u^\mu$ now always has the length unity. It is just the velocity 
+vector $v^\mu = d z^\mu / ds$, and the parameter $\tau$ has become the proper 
+time $s$.
+
+Equation (\ref{ecuacion 8.1}) then becomes
+\begin{equation}
+ \label{ecuacion 8.3}
+ \frac{dv^\mu}{ds} + \Gamma^\mu_{\nu\sigma} u^\nu u^\sigma = 0.
+\end{equation}
+Equation (\ref{ecuacion 8.2}) becomes 
+\begin{equation}
+ \label{ecuacion 8.4}
+ \frac{d^2 z^\mu}{d s^2} + 
+      \Gamma^\mu_{\nu\sigma}\frac{dz^\nu}{ds}\frac{dz^\sigma}{ds} = 0.
+\end{equation}
+
+We make the physical assumption that the world line of a particle not acted on 
+by any forces, except gravitational, is a timelike geodesic. This replaces 
+Newton's first law of motion. Equation (\ref{ecuacion 8.4}) fixes the 
+acceleration and provides the equations of motion.
+
+We also make the assumption that the path of a ray of light is a null geodesic. 
+It is fixed by equation (\ref{ecuacion 8.2}) referring to some parameter along 
+the path. The proper time $s$ cannot now be used because $ds$ vanishes.
+

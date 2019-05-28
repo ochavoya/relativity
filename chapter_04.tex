@@ -1,0 +1,56 @@
+
+We can have a quantity $N^{\mu}_{\nu\rho\cdots}$ with various up and down 
+suffixes, which is not a tensor. If it is a tensor, it must transform under a 
+change of coordinate system according to the law exemplified by (\ref{ecuacion 
+3.6}). With any other law it is a nontensor. A tensor has the property that if 
+all the components vanish in a system of coordinates, they vanish in every 
+system of coordinates. This may not hold for a nontensor.
+
+For a nontensor we can raise and lower suffixes by the same rules as for a 
+tensor. Thus, for example,
+\[
+    g^{\alpha\nu} {N^{\mu}}_{\nu\rho} = {N^{\mu\alpha}}_{\rho}.
+\]
+The consistency of these rules is quite independent of the transformation laws 
+to a different system of coordinates. Similarly, we can contract a nontensor by 
+putting an upper and lower suffix equal.
+
+We may have tensors and nontensors apparing together in the same equation. The 
+rules for balancing suffixes apply  equally to tensors and nontensors.
+
+\subsection{The Quotient Theorem}
+Suppose that $P_{\lambda\mu\nu}$ is such that $A^\lambda P_{\lambda\mu\nu}$ is 
+a tensor \emph{for any vector} $A^\lambda$. Then $P_{\lambda\mu\nu}$ is a 
+tensor.
+
+To prove it, write $A^\lambda P_{\lambda\mu\nu} = Q_{\mu\nu}$. We are given 
+that this is a tensor; therefore
+\[
+ Q_{\beta\gamma} = Q_{\mu'\nu'} x^{\mu'}_{,\beta} x^{\nu'}_{,\gamma}.
+\]
+
+Thus 
+\[
+A^\alpha P_{\alpha\beta\gamma} = A^{\lambda'}P_{\lambda'\mu'\nu'}
+        x^{\mu'}_{,\beta}x^{\nu'}_{,\gamma}.
+\]
+Since $A^\lambda$ is a vector, we have from (\ref{ecuacion 3.2}),
+\[
+ A^{\lambda'} = A^\alpha x^{\lambda'}_{,\alpha'}.
+\]
+So
+\[
+A^\alpha P_{\alpha\beta\gamma} = 
+A^\alpha 
+x^{\lambda'}_{,\alpha}P_{\lambda'\mu'\nu'} x^{\mu'}_{,\beta}x^{\nu'}_{,\gamma}.
+\]
+This equation must hold for all values of $A^\alpha$, so
+\[
+P_{\alpha\beta\gamma} = 
+P_{\lambda'\mu'\nu'} x^{\lambda'}_{,\alpha} x^{\mu'}_{,\beta}x^{\nu'}_{,\gamma}.
+\]
+showing that $P_{\alpha\beta\gamma}$ is a tensor.
+
+The theorem also holds is $P_{\alpha\beta\gamma}$ is replaced by a quantity 
+with any number of suffixes, and if some of the suffixes are upstairs.
+

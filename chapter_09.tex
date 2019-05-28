@@ -1,0 +1,80 @@
+A gepdesic that is not a null geodesic has the property that $\int ds$, taken 
+along a sectio of the track with the end points $P$ and $Q$, is stationary if 
+one makes a small variation of the tack keeping the end points fixed.
+
+Let us suppose that each point of the track, with the coordinates $z^\mu$ is 
+shifted so that its coordinates become $z^\mu + \delta z^\mu$. If $dx^\mu$ 
+denotes an element along the track,
+\[
+ ds^2 = g_{ \mu \nu } dx^\mu dx^\nu
+\]
+Thus
+\[
+\begin{array}{rcl}
+ 2 ds \delta ds & = & d x ^\mu dx^\nu \delta g_{\mu\nu} 
+    + g_{\mu\nu} dx^\mu \delta dx^\nu
+    + g_{\mu\nu} dx^\nu \delta dx^\mu  \\
+    & = & d x ^\mu dx^\nu \delta g_{\mu\nu}  
+    + 2 g_{\mu\lambda}dx^\mu \delta dx^\lambda .
+\end{array}
+\]
+Now
+\[
+\delta dx^\lambda = d (\delta x^\lambda).
+\]
+Thus, with the help of $dx^\mu = v^\mu ds$,
+\[
+    \delta(ds) = \left(
+    \frac{1}{2} g_{\mu\nu,\lambda}v^\mu v^\nu \delta x^\lambda  
+    + g_{\mu\lambda}v^\mu \frac{d\delta x^\lambda}{ds}
+    \right) ds
+\]
+Hence
+\[
+\delta \int ds = \int{\delta (ds)}
+ = \int \left[
+    \frac{1}{2} g_{\mu\nu,\lambda}v^\mu v^\nu \delta x^\lambda  
+    + g_{\mu\lambda}v^\mu \frac{d\delta x^\lambda}{ds}
+    \right] ds
+\]
+By partial integration (of the second term), using the condition that $\delta 
+x^\lambda = 0$ at the end points $P$ and $Q$, we get
+\begin{equation}
+ \label{ecuacion 9.1}
+ \delta \int ds 
+ = \int \left[
+    \frac{1}{2} g_{\mu\nu,\lambda}v^\mu v^\nu 
+    -   \frac{d}{ds} \left(g_{\mu\lambda}v^\mu\right)
+    \right] \delta x^\lambda   ds
+\end{equation}
+The condition for this to vanish with arbitrary $\delta x^\lambda$ is
+\begin{equation}
+ \label{ecuacion 9.2}
+ \frac{d}{ds}\left(g_{\mu\lambda} v^\mu\right) 
+ - \frac{1}{2}g_{\mu\nu,\lambda} = 0
+\end{equation}
+Now
+\[
+\begin{array}{rcl}
+ \frac{d}{ds}\left(g_{\mu\lambda} v^\mu\right) & = &  
+  g_{\mu\lambda}\frac{dv^\mu}{ds} + g_{\mu\lambda,\nu}v^\mu v^\nu \\
+  & = & g_{\mu\lambda}\frac{dv^\mu}{ds} + 
+  \frac{1}{2}\left( g_{\lambda\mu,\nu} + g_{\lambda\nu,\mu} \right) v^\mu v^\nu 
+.
+\end{array}
+\]
+Thus the condition (\ref{ecuacion 9.2}) becomes
+\[
+ g_{\mu\lambda}\frac{dv^\mu}{ds} + \Gamma_{\lambda\mu\nu}v^\mu v^\nu = 0.
+\]
+Multiplying this by $g^{\lambda\sigma}$, it becomes
+\[
+ \frac{dv^\sigma}{ds} + \Gamma^\sigma_{\mu\nu}v^\mu v^\nu = 0,
+\]
+which is just the condition (\ref{ecuacion 8.3}) for the geodesic.
+
+This work shows that for a geodesic, (\ref{ecuacion 9.1}) vanishes and $\int 
+ds$ is stationary. Conversely, if we assume that $\int ds$ is stationary, we 
+can infer that the track is a geodesic. Thus we may use the stationary 
+condition as the definition of a geodesic, except in the case of a null 
+geodesic.

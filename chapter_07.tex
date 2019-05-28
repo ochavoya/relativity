@@ -1,0 +1,141 @@
+By differentiating (\ref{ecuacion 6.3}) we get (\textbf{omitting the second 
+comma with two differentiations})
+\begin{equation}
+ \label{ecuacion 7.1}
+ \begin{array}{rcl}
+g_{\mu\nu,\sigma} & = & y^n_{,\mu\sigma} y_{n,\nu} +
+                    y^n_{,\mu} y_{n,\nu\sigma} \\
+                  & = & y_{n,\mu\sigma} y^n_{,\nu} +
+                     y_{n,\nu\sigma} y^n_{,\mu}
+\end{array}
+\end{equation}
+
+since we can move the suffix $n$ freely up and down, on account of the 
+constancy of the $h_{mn}$. Interchanging $\mu$ and $\sigma$ in (\ref{ecuacion 
+7.1}) we get 
+\begin{equation}
+ \label{ecuacion 7.2}
+ g_{\sigma\nu,\mu} = y_{n,\mu\sigma} y^n_{,\nu} + y_{n,\nu\mu} y^n_{,\sigma} 
+\end{equation}
+
+Interchanging $\nu$ and $\sigma$ in (\ref{ecuacion 7.1})
+\begin{equation}
+ \label{ecuacion 7.3}
+ g_{\mu\sigma,\nu} = y_{n,\mu\nu} y^n_{,\sigma} + y_{n,\sigma\nu} y^n_{,\mu} 
+\end{equation}
+Now take (\ref{ecuacion 7.1})$+$(\ref{ecuacion 7.3})$-$(\ref{ecuacion 7.2}) and 
+divide by $2$. The result is
+\begin{equation}
+ \label{ecuacion 7.4}
+ \frac{1}{2} \left( g_{\mu\nu,\sigma} + g_{\mu\sigma,\nu} - g_{\nu\sigma,\mu}  
+\right) = y_{n,\nu\sigma}y^n_{,\mu}.
+\end{equation}
+
+Put
+\begin{equation}
+ \label{ecuacion 7.5}
+ \Gamma_{\mu\nu\sigma} = \frac{1}{2}\left(
+    g_{\mu\nu,\sigma} + g_{\mu\sigma,\nu} - g_{\nu \sigma,\mu}
+ \right)
+\end{equation}
+It is called a Christoffel symbol of the first kind. It is symmetrical with 
+respect to the last two suffixes. It is a nontensor. A simple consequence of 
+(\ref{ecuacion 7.5}) is
+\begin{equation}
+ \label{ecuacion 7.6}
+ \Gamma_{\mu\nu\sigma} + \Gamma_{\nu\mu\sigma} = g_{\mu\nu,\sigma}.
+\end{equation}
+We see now that (\ref{ecuacion 6.7}) can be written as
+\begin{equation}
+ \label{ecuacion 7.7}
+ d A_{\nu} = A^\mu \Gamma_{\mu\nu\sigma} dx^\sigma.
+\end{equation}
+Al reference to the $N$-dimensional space has now disappeared, as the 
+Christoffel symbol involves only the metric $g_{\mu\nu}$ of physical space.
+
+We can infer that the length of a vector is unchanged by parallel displacement. 
+We have
+\begin{equation}
+ \label{ecuacion 7.8}
+ \begin{array}{rcl}
+ d\left( g^{\mu\nu} A_\mu A_\nu \right) & = & 
+    g^{\mu\nu} A_\nu d A_\mu + g^{\mu\nu} A_\mu d A_\nu + A_\mu A_\nu  
+    {g^{\mu\nu}}_{,\sigma} dx^\sigma \\
+    & = & A^\mu d A_\mu + A^\nu d A_\nu 
+      + A_\mu A_\nu {g^{\mu\nu}}_{,\sigma} dx^\sigma \\
+    & = & A^\mu A^\nu \Gamma_{\nu\mu\sigma} dx^\sigma 
+    + A^\nu A^\mu \Gamma_{\mu\nu\sigma} dx^\sigma
+    + A_\mu A_\nu {g^{\mu\nu}}_{,\sigma} dx^\sigma \\
+    & = & A^\mu A^\nu g_{\mu\nu,\sigma} dx^\sigma
+    + A_\mu A_\nu {g^{\mu\nu}}_{,\sigma} dx^\sigma
+ \end{array}
+\end{equation}
+
+Now ${g^{\alpha\mu}}_{,\sigma} g_{\mu\nu} + g^{\alpha\mu} g_{\mu\nu,\sigma} = 
+\left(g^{\alpha\mu}g_{\mu\nu}\right)_{,\sigma} = g^{\alpha}_{\nu,\sigma} = 0$. 
+Multiplying by $g^{\beta\nu}$, we get
+\begin{equation}
+ \label{ecuacion 7.9}
+ {g^{\alpha\beta}}_{,\sigma} = - g^{\alpha\mu} g^{\beta\nu}g_{\mu\nu,\sigma}.
+\end{equation}
+This is a useful formula giving the derivative of $g^{\alpha\beta}$ in terms 
+of the derivative of $g_{\mu\nu}$. It allows us to infer
+\[
+ A_\alpha A_{\beta} {g^{\alpha\beta}}_{,\sigma} = - A^\mu A^\nu 
+g_{\mu\nu,\sigma}
+\]
+and so the expression (\ref{ecuacion 7.8}) vanishes. Thus the length of a 
+vector is constant. In particular, a null vector (i.e. a vector of zero length) 
+remains a null vector under parallel displacement.
+
+The constancy of the length of the vector follows also from geometrical 
+arguments. When we split up the vector $A^\mu$ into tangential and normal parts 
+according to (\ref{ecuacion 6.5}), the normal part is infinitesimal and is 
+orthogonal to the tangential part. It follows that, to the first order, the 
+length of the whole vector equals that of its tangential part.
+
+The constancy of the length of any vector requires the constancy of the scalar 
+product $g^{\mu\nu} A_\mu B_\nu$ of any two vectors $A$ and $B$. This can be 
+inferred from the constancy of the length of $A + \lambda B$ for any value of 
+the parameter $\lambda$.
+
+It is frequently useful to raise the first suffix of the Christoffel symbol so 
+as to form
+\[
+ \Gamma^\mu_{\nu\sigma} = g^{\mu\lambda}\Gamma_{\lambda\mu\sigma}.
+\]
+It is then called a Christoffel symbol of the second kind. It is symmetrical 
+between its two lower suffixes. As explained in Section 4, this raising is 
+quite permissible, even for a nontensor.
+
+The formula (\ref{ecuacion 7.7}) may be written
+\begin{equation}
+ \label{ecuacion 7.10}
+ dA_{\nu} = \Gamma^\mu_{\nu\sigma} A_\mu dx^\sigma
+\end{equation}
+It is the standard formula referring to covariant components. For a second 
+vector $B^\nu$ we have
+\[
+\begin{array}{rcl}
+d(A_\nu B^\nu) & = & 0 \\
+A_\nu d B^\nu  & = & - B^\nu d A_\nu 
+                 = - B^\nu \Gamma^\mu_{\nu\sigma} A_\mu dx^\sigma \\
+               & = & - B^\mu \Gamma^\nu_{\mu\sigma} A_\nu dx^\sigma
+\end{array}
+\]
+This must hold for any $A_\nu$, so we get
+\begin{equation}
+ \label{ecuacion 7.11}
+ d B^\nu = - \Gamma^\nu_{\mu\sigma} B^\mu dx^\sigma.
+\end{equation}
+This is the standard formula for parallel displacement referring to 
+contravariant components.
+
+
+
+
+
+
+
+
+

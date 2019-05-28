@@ -1,0 +1,44 @@
+Let $S$ be a scalar field. Its derivative $S,y$ is a covariant vector, as we 
+saw in Section 3. Now let $A_\mu$ be a vector field. Is its derivative 
+$A_{\mu,\nu}$ a tensor?
+
+We must examine how $A_{\nu,\nu}$ transforms under a change of coordinate 
+system. With the notation in Section 3, $A_\mu$ transforms to
+\[
+ A_{\mu'} = A_\rho x^\rho _{,\mu'}
+\]
+like equation (\ref{ecuacion 3.5}), and hence
+\[
+ \begin{array}{rcl}
+  A_{\mu',\nu'} & = & \left( A_\rho x^\rho _{,\mu'} \right)_{,\nu'}\\
+                & = & A_{\rho,\sigma} x^\sigma_{,\nu'} x^\rho_{,\mu'}
+                + A_\rho x^\rho_{,\mu'\nu'} .
+ \end{array}
+\]
+The last term should not be here if we were to have the correct transformation 
+law for a tensor. Thus $A_{\mu,\nu}$ is not a tensor.
+
+We can, however, modify the process of differentiation so as to get a tensor. 
+Let us take the vector $A_\mu$ at the point $x$ and shift it to $x+dx$ by 
+parallel displacement. It is still a vector. We may subtract it from the vector 
+$A_\mu$ at $x+dx$ and the difference will be a vector. It is, to the first order
+\[
+ A_{\mu}(x + dx) - \left[ A_{\mu}(x) + \Gamma^\alpha_{\mu\nu}A_\alpha 
+dx^\nu\right] = \left(A_{\mu,\nu} - \Gamma^\alpha_{\mu\nu} A_\alpha 
+\right)dx^\nu .
+\]
+This quantity is a vector, for any vector $dx^\nu$; hence, by the quotient 
+theorem of Section 4, the coefficient
+\[
+ A_{\mu\nu} - \Gamma^\alpha_{\mu\nu} A_\alpha
+\]
+is a tensor. One can easily verify directly that it transforms correctly under 
+a change of coordinate system.
+
+It is called the covariant derivative of $A_\nu$ and written
+\begin{equation}
+ \label{ecuacion 10.1}
+ A_{\mu:\nu} = A_{\mu,\nu} - \Gamma^\alpha_{\mu\nu}A_\alpha. 
+\end{equation}
+
+

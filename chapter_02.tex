@@ -1,0 +1,88 @@
+Before passing to the formalism of general relativity it is convenient to consider an intermediate formalism--special relativity referred to oblique rectilinear axes.
+
+If we make a transformation to oblique axes, each of the $dx^\mu$ mentioned in (\ref{ecuacion 1.1}) becomes a linear function the new $dx^\mu$ and the quadratic form (\ref{ecuacion 1.1}) becomes a general quadratic form in the new $dx^\mu$. We may write it
+\begin{equation}
+ \label{ecuacion 2.1}
+ g_{\mu\nu} dx^\mu dx^\nu
+\end{equation}
+with summation understood over both $\mu$ and $\nu$. The coefficients $g_{\mu\nu}$ appearing here depend on the system of oblique axes. Of course we take $g_{\mu\nu} = g_{\nu\mu}$ because any difference of $g_{\mu\nu}$ and $g_{\nu\mu}$ would not show up in the quadratic form (\ref{ecuacion 2.1}). There are thus ten independent coefficients $g_{\mu\nu}$.\footnote{In general the number of independent components in a symmetric matrix of $n\times n$ dimensions is equal to the number of unordered pairs of $n$ elements. From the total number of ordered pairs we subtract $n$ pairs with identical elements, and we are left with $n^2 - n$. We divide the last number by two to obtain the number of unordered pairs with distinct elements. The total number of uordered pairs is then \[ T_n = \frac{1}{2} n \cdot (n+1)\] which is the $n$th triangular number. Then we notice that $T_{n-1}$ is the number of independent components of an antisymmetric matrix of $n\times n $ dimensions. In the case of four dimensions this number is $T_3 = 6$.}
+
+A general contravariant vector has four components $A^\mu$ which transform like the $dx^\mu$ under any transformation of the oblique axes. Thus 
+\[
+ g_{\mu\nu} A^\mu A^\nu
+\]
+is invariant. It is the squared length of the vector $A^\mu$. 
+
+Let $B^\mu$ be a second contravariant vector; then $A^\mu + \lambda B^\mu$ is still another, for any value of the number $\lambda$. It's squared length is
+\[
+ g_{\mu\nu}
+ \left( A^\mu + \lambda B^\mu \right)
+ \left( A^\nu + \lambda B^\nu \right)
+ = g_{\mu\nu} A^\mu A^\nu 
+ + \lambda \left( g_{\mu\nu} A^\mu B^\nu + g_{\mu\nu} A^\nu B^\mu \right)
+ + \lambda^2 g_{\mu\nu} B^\mu B^\nu .
+\]
+This must be an invariant for all values of $\lambda$. It follows that the term independent of $\lambda$ and the coefficients of $\lambda$ and $\lambda^2$ must separately be invariants. The coefficient of $\lambda$ is
+\[
+ g_{\mu\nu} A^\mu B^\nu + g_{\mu\nu} A^\nu B^\mu = 2 g_{\mu\nu} A^\mu B^\nu
+\]
+since in the second term in the left we can interchange $\mu$ and $\nu$ and then set $g_{\mu\nu} = g_{\nu\mu}$. Thus we find that $g_{\mu\nu} A^\mu B^\nu$ is an invariant. It is the scalar product of $A^\mu$ and $B^\mu$.
+
+Let $g$ be the determinant of $g_{\mu\nu}$. It must not vanish; otherwise the four axes would not provide independent directions in space-time and would no be suitable as axes. For the orthogonal axes of the preceding section the diagonal elements of $g_{\mu\nu}$ are $1$, $-1$, $-1$, $-1$ and the nondiagonal elements are zero. Thus $g=-1$. With oblique axes $g$ must still be negative, because the oblique axes can be obtained from the orthogonal ones by a continuous process, resulting ig $g$ varying continuosly, and $g$ cannot pass through the value zero.
+
+Define the covariant vector $A_\mu$, with a downstairs suffix, by
+\begin{equation}
+ \label{ecuacion 2.2}
+ A_\mu = g_{\mu\nu} A^\nu.
+\end{equation}
+Since the determinant $g$ does not vanish, these equations can be solved for $A^\nu$ in terms of the $A_\mu$. Let the result be
+\begin{equation}
+ \label{ecuacion 2.3}
+ A^\nu = g^{\mu\nu} A_\mu.
+\end{equation}
+Each $g^{\mu\nu}$ equals the cofactor of the corresponding $g_{\mu\nu}$, divided by the determinant itself. It follows that $g^{\mu\nu} = g^{\nu\mu}$.
+
+Let us substitute for the $A^\nu$ in (\ref{ecuacion 2.2}) sus valores dados por (\ref{ecuacion 2.3}). We must replace the dummy $\mu$ in (\ref{ecuacion 2.3}) by some other Greek letter, say $\rho$, in order not to have three $\mu$'s in the same term. We get
+\[
+ A\mu = g_{\mu\nu} g^{\nu\rho}A_\rho.
+\]
+Since this equation must hold for any four quantities $A_\mu$, we can infer 
+\begin{equation}
+ \label{ecuacion 2.4}
+ g_{\mu\nu} g^{\nu\rho} = g_{\mu}^{\rho},
+\end{equation}
+where
+\begin{equation}
+ \label{ecuacion 2.5}
+ \begin{array}{rclr}
+    g_{\mu}^{\rho} & = & 1 & \mbox{ for } \mu = \rho,\\
+                   & = & 0 & \mbox{ for } \mu \ne \rho.
+ \end{array}
+\end{equation}
+
+The formula (\ref{ecuacion 2.2}) may be used to lower any upper suffix occurring in a tensor. Similarly, (\ref{ecuacion 2.3}) can be used to raise any downstairs suffix. If a suffix is lowered and raised agian, he result is the same as the original tensor, on account of (\ref{ecuacion 2.4}) and \ref{ecuacion 2.5}. Note that $g_{\mu}^{\nu}$ just produces a substitution of $\rho$ for $\mu$ or of $\mu$ for $\rho$,
+\[
+ g_{\mu}^{\rho} A^{\mu} = A^{\rho},
+\]
+and of $\mu$ for $\rho$,
+\[
+ g_{\mu}^{\rho} A_{\rho} = A_{\mu}.
+\]
+
+if we apply the rule to raising a suffix to the $\mu$ in $g_{\mu\rho}$ we get
+\[
+ {g^{\alpha}}_{\nu} = g^{\alpha\mu} g_{\mu\nu}.
+\]
+This agrees with (\ref{ecuacion 2.4}) if we take into accoun that in ${g^{\alpha}}_{\nu}$ we may write the suffixes one above the other because of the symmetry of $g_{\mu\nu}$. Further we may raise the suffix $\nu$ by the same rule and get
+\[
+ g^{\alpha\beta} = g^{\nu\beta} g^{\alpha}_{\nu},
+\]
+a result which follows immediately form (\ref{ecuacion 2.5}). The rules for raising and lowering suffixes apply to all the suffixes in $g_{\mu\nu}$, $g^{\mu}_{\nu}$, $g^{\mu\nu}$.
+
+
+
+
+
+
+
+
