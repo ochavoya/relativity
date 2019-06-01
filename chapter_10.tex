@@ -35,10 +35,59 @@ theorem of Section 4, the coefficient
 is a tensor. One can easily verify directly that it transforms correctly under 
 a change of coordinate system.
 
-It is called the covariant derivative of $A_\nu$ and written
+It is called the covariant derivative of $A_\mu$ and written
 \begin{equation}
  \label{ecuacion 10.1}
  A_{\mu:\nu} = A_{\mu,\nu} - \Gamma^\alpha_{\mu\nu}A_\alpha. 
 \end{equation}
+
+The sign $:$ before a lower suffix will always denote a covariant derivative, 
+just as the comma denotes an ordinary derivative.
+
+Let $B_{\nu}$ be a second vector. We define the outer product $A_{\mu}B_{\nu}$ 
+to have the covariant derivative(\footnote{Notice that the definition of the  
+covariant derivative of a second rank tensor is not motivated because the 
+notion of \emph{parallel displacement of tensor} doesn't make sense. })
+
+\begin{equation}
+ \label{ecuacion 10.2}
+ \left(A_{\mu} B_{\nu} \right)_{\sigma} =
+     A_{\mu:\sigma}B_{\nu} + A_{\mu} B_{\nu:\sigma}
+\end{equation}
+
+Evidently it is a tensor with three suffixes. It has the value
+\[
+  \left(A_{\mu} B_{\nu} \right)_{\sigma} =
+  \left(A_{\mu,\sigma} - \Gamma^{\alpha}_{\mu\sigma} A_{\alpha}\right)B_{\nu} 
++ A_{\mu} \left(B_{\nu,\sigma} - \Gamma^{\alpha}_{\nu\sigma}B_{\alpha}\right)
+\]
+
+Let $T_{\mu\nu}$ be a tensor with two suffixes. It is expressible as a sum of 
+terms like $A_{\mu}B_{\nu}$, so, its covariant derivative is
+\begin{equation}
+ \label{ecuacion 10.3}
+ T_{\mu\nu:\sigma} = T_{\mu\nu,\sigma}
+ - \Gamma^{\alpha}_{\mu\sigma} T_{\alpha\nu}
+ - \Gamma^{\alpha}_{\nu\sigma} T_{\mu\alpha}.
+\end{equation}
+
+
+The rule can be extended to the covariant derivative of a tensor 
+$Y_{\mu\nu\cdots}$ with any number of suffixes downstairs
+\begin{equation}
+ \label{ecuacion 10.4}
+ Y_{\mu\nu\cdots:\sigma} = Y_{\mu\nu\cdots,\sigma} - \mbox{ a }
+ \Gamma \mbox{ term for each suffix}.
+\end{equation}
+In each of these $\Gamma$ terms we must make the suffixes balance, which is 
+sufficient to fix how the suffixes go.
+
+The case of a scalar is included in the general formula (\ref{ecuacion 10.4}) 
+with the number of suffixes in $Y$ zero.
+\begin{equation}
+ \label{ecuacion 10.5}
+ Y_{:\sigma} = Y_{,\sigma} .
+\end{equation}
+
 
 
