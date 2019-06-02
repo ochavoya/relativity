@@ -56,8 +56,8 @@ Interchanging the two systems of axes and changing the suffixes, we get
 We know from the laws of partial differentiation that
 \begin{equation}
  \label{ecuacion 3.4}
- \frac{\partial x^{\lambda}}{\partial ×^{\mu'}} 
-\frac{\partial ×^{\mu'}}{\partial x^{\nu}} = g^{\lambda}_{\nu}.
+ \frac{\partial x^{\lambda}}{\partial x^{\mu'}} 
+\frac{\partial x^{\mu'}}{\partial x^{\nu}} = g^{\lambda}_{\nu}.
 \end{equation}
 
 To see how a covariant vector $B_{\mu}$ transforms, we use the condition that 
@@ -77,12 +77,12 @@ equate the coefficients of $A^{\mu'}$ and get
 We can now use the formulas (\ref{ecuacion 3.2}) and (\ref{ecuacion 3.5}) to 
 transform any tensor with any upstairs and downstairs suffixes. We just have to 
 use coefficients like $x^{\mu'}_{,\nu}$ for each upstairs suffix and 
-$x^{\lambda}_{\nu'}$ for each downstairs suffix and make all the suffixes 
+$x^{\lambda}_{,\nu'}$ for each downstairs suffix and make all the suffixes 
 balance. For example
 \begin{equation}
  \label{ecuacion 3.6}
  {T^{\alpha'\beta'}}_{\gamma'} =
-    x^{\alpha'}_{,\lambda}x^{\beta'}_{,\mu}x^{\nu'}_{,\gamma} 
+    x^{\alpha'}_{,\lambda}x^{\beta'}_{,\mu}x^{\nu}_{,\gamma'} 
     {T^{\lambda\mu}}_{\nu}.
 \end{equation}
 Any quantity that transforms according to this law is a tensor. This may be 
@@ -95,10 +95,10 @@ In fact if $T^{\mu\nu}$ is tensor and ($T^{\mu\nu} = \pm T^{\nu\mu}$). By
 the transformation law 
 \[T^{\mu'\nu'} = x^{\mu'}_{,\alpha} x^{\nu'}_{,\beta}T^{\alpha\beta}.\]
 Using the property of symmetry
-\[T^{\mu'\nu'} = \pm x^{\mu'}_{,\alpha} x^{\nu'}_{,\beta}T^{\beta}\alpha
-               = \pm x^{\nu'}_{,\beta}  x^{\mu'}_{,\alpha}T^{\beta}\alpha\]
+\[T^{\mu'\nu'} = \pm x^{\mu'}_{,\alpha} x^{\nu'}_{,\beta}T^{\beta\alpha}
+               = \pm x^{\nu'}_{,\beta}  x^{\mu'}_{,\alpha}T^{\beta\alpha}\]
 and reordering the dummy suffixes
-\[T^{\mu'\nu'} = \pm x^{\nu'}_{,\alpha} x^{\mu'}_{,\beta}T^{\alpha}\beta
+\[T^{\mu'\nu'} = \pm x^{\nu'}_{,\alpha} x^{\mu'}_{,\beta}T^{\alpha\beta}
                = \pm T^{\nu'\mu'}.\]
 })
 
@@ -128,6 +128,10 @@ four $x^\mu$ or the four $x^{\mu'}$. From the laws of partial differentiation
 \]
 Hence the $S_{,\lambda}$ transform like the $B_{\lambda}$ of equations 
 (\ref{ecuacion 3.5}) and thus \emph{the derivative of a scalar field is a 
-covariant vector field.}
+covariant vector field.}(\footnote{As a matter of fact, a covariant 
+(cogradient) vector can be defined as an array of four quantities $A_{\mu}$ that 
+transform like the components of the gradient of a scalar.  A contravariant 
+(contragradient) vector can be defined as an array of four quantities that 
+transform like the differentials $dx^\mu$.})
 
 
