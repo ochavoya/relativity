@@ -102,3 +102,70 @@ gives
 from (\ref{ecuacion 7.6}). Thus the $g_{\mu\nu}$, count as constants under 
 covariant differentiation.
 
+Formula (\ref{ecuacion 10.2}) is the usual rule that one uses for 
+differentiating a product. We assume this usual rule holds also for the 
+covariant derivative of the scalar product of two vectors. Thus
+\[
+ \left( A^{\mu} B_{\mu}\right):{\sigma} =  
+ A^{\mu}_{:\sigma}B_{\mu} +  A^{\mu} B_{\mu:\sigma}.
+\]
+We get, according to (\ref{ecuacion 10.5}) and (\ref{ecuacion 10.1}),
+\[
+ \left( A^{\mu} B_{\mu}\right){:\sigma} =  
+ A^{\mu}_{:\sigma}B_{\mu} 
+ + A^{\mu} \left( B_{\mu,\sigma} -\Gamma^{\alpha}_{\mu\sigma} B_{\alpha} 
+\right).
+\]
+and hence 
+\[
+ A^{\mu}_{,\sigma} B_{\mu} = A^{\mu}_{:\sigma}B_{\mu} 
+ - A^{\alpha}\Gamma^{\mu}_{\alpha\sigma} B_{\mu}.
+\]
+Since this holds for any $B_{\mu}$, we get
+\begin{equation}
+ \label{ecuacion 10.7}
+   A^{\mu}_{:\sigma}B_{\mu} = A^{\mu}_{,\sigma} B_{\mu}  
+ + A^{\alpha}\Gamma^{\mu}_{\alpha\sigma} B_{\mu},
+\end{equation}
+which is the basic formula for the covariant derivative of a contravariant 
+vector. The same Christoffel symbol occurs as  in the basic formula 
+(\ref{ecuacion 10.1}) for a covariant vector, but now there is a $+$ sign. The 
+arrangement of suffixes is completely determined by the balancing requirement.
+
+We can extend the formalism so as to include the covariant derivative of any 
+tensor with any number of upstairs or downstairs suffixes. A $\Gamma$ terms 
+appears for each suffix, with a $+$ sign if the suffix is upstairs an a $-$ 
+sign if it is downstairs. If we contract two suffixes in the tensor, the 
+corresponding $\Gamma$ terms cancel.
+
+The formula for the covariant derivative of a product,
+\begin{equation}
+ \label{ecuacion 10.8}
+ \left(X Y\right)_{:\sigma} = X_{:\sigma} Y + X Y_{:\sigma},
+\end{equation}
+holds quite generally, with $X$ and $Y$ any kind of tensor quantities. On 
+account of the $g_{\mu\nu}$ counting as constants, we can shift suffixes up or 
+down before covariant differentiation and the result is the same as if we 
+shifted them afterwards.
+
+The covariant derivative of a nontensor has no meaning.
+
+The laws of physics must be valid in all systems of coordinates. Thus must thus 
+be expressible as tensor equations. Whenever they involve the derivative of a 
+field quantity, it must be a covariant derivative. The field equations of 
+physics must all be rewritten with the ordinary derivatives replaced by 
+covariant derivatives. For example, the d'Alembert equation $\Box V = 0$ for a 
+scalar $V$ becomes, in covariant form
+\[
+ g^{\mu\nu} V_{:\mu:\nu} = 0.
+\]
+This gives, from (\ref{ecuacion 10.1}) and (\ref{ecuacion 10.5}),
+\begin{equation}
+ \label{ecuacion 10.9}
+ g^{\mu\nu}\left( V_{,\mu\nu} - \Gamma^{\alpha}_{\mu\nu}V_{\alpha} = 0.\right)
+\end{equation}
+
+Even if one is working with flat space (which means neglecting the 
+gravitational field) and one is using curvilinear coordinates, one must write 
+one's equations in terms of covariant derivatives if one wants them to hold in 
+all systems of coordinates.
