@@ -1,2 +1,4 @@
-*.bak
+*.backup
 *.log
+*.aux
+continue

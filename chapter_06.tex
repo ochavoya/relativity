@@ -1,19 +1,43 @@
 
-Suppose we have a vector $A^\mu$ located at a point $P$. \textbf{If the space is curved, we cannot give a meaning to a parallel vector at a different point $Q$}, as one can easily see if one thinks of the example of a curved two-dimensional space in a three-dimensional Euclidean space. However, if we take a point $P'$ close to $P$, there is a parallel vector a $P'$, with an uncertainty of the second order, counting the distance from $P$ to $P'$ as the first order. Thus we can give a meaning to displacing the vector $A^\mu$ from $P$ to $P'$ keeping it parallel to itself and keeping the length constant.
+Suppose we have a vector $A^\mu$ located at a point $P$. \textbf{If the space is 
+curved, we cannot give a meaning to a parallel vector at a different point $Q$}, 
+as one can easily see if one thinks of the example of a curved two-dimensional 
+space in a three-dimensional Euclidean space. However, if we take a point $P'$ 
+close to $P$, there is a parallel vector at $P'$, with an uncertainty of the 
+second order, counting the distance from $P$ to $P'$ as the first order. Thus we 
+can give a meaning to displacing the vector $A^\mu$ from $P$ to $P'$ keeping it 
+parallel to itself and keeping the length constant.
 
-We can transfer the vector continuously along a path by this process of parallel displacement. Taking a path from $P$ to $Q$, we end up with a vector at $Q$ which is parallel to the original vector at $P$, \textbf{with respect to this path}. But a different path will give a different result. There is no absolute meaning to a parallel vector at $Q$. If we transport the vector at $P$ by parallel displacement around a closed loop, we shall end up with a vector at $P$ which is usually in a different direction.
+We can transfer the vector continuously along a path by this process of 
+parallel displacement. Taking a path from $P$ to $Q$, we end up with a vector at 
+$Q$ which is parallel to the original vector at $P$, \textbf{with respect to 
+this path}. But a different path will give a different result. There is no 
+absolute meaning to a parallel vector at $Q$. If we transport the vector at $P$ 
+by parallel displacement around a closed loop, we shall end up with a vector at 
+$P$ which is usually in a different direction.
 
-We can get equations for the parallel displacement of a vector by supposing our four-dimensional physical space immersed in a flat space of a higher number of dimensions; say $N$. In this $N$-dimensional space we introduce rectilinear coordinates $z^n\,(n=1,\cdots, N)$. Those coordinates do not need to be orthogonal, only rectilinear. Between two neighboring points there is an invariant distance $ds$ given by 
+We can get equations for the parallel displacement of a vector by supposing our 
+four-dimensional physical space immersed in a flat space of a higher number of 
+dimensions; say $N$. In this $N$-dimensional space we introduce rectilinear 
+coordinates $z^n\,(n=1,\cdots, N)$. Those coordinates do not need to be 
+orthogonal, only rectilinear. Between two neighboring points there is an 
+invariant distance $ds$ given by 
 \begin{equation}
  \label{ecuacion 6.1}
  ds^2 = h_{mn} dz^m dz^n ,
 \end{equation}
-summed for $n,\,m = 1,2,\cdots, N$. The $h_{nm}$ are constants, unlike the $g_{\mu\nu}$. We may use them to lower suffixes in the $N$-dimensional space; thus
+summed for $n,\,m = 1,2,\cdots, N$. The $h_{nm}$ are constants, unlike the 
+$g_{\mu\nu}$. We may use them to lower suffixes in the $N$-dimensional space; 
+thus
 \[
  dz_n = h_{mn} dz^m.
 \]
 
-Physical space forms a four-dimensional ``surface'' in the flat $N$-dimensional space. Each point $x^\mu$ in the surface determines a definite point $y^n$ in the $N$-dimensional space. Each coordinate $y^n$ is a function of the four $x$'s; say $y^n(x)$. The equations of the surface would be given by eliminating the four $x$'s from the $N$ $y^n(x)$'s. There are $N-4$ such equations.
+Physical space forms a four-dimensional ``surface'' in the flat $N$-dimensional 
+space. Each point $x^\mu$ in the surface determines a definite point $y^n$ in 
+the $N$-dimensional space. Each coordinate $y^n$ is a function of the four 
+$x$'s; say $y^n(x)$. The equations of the surface would be given by eliminating 
+the four $x$'s from the $N$ $y^n(x)$'s. There are $N-4$ such equations.
 
 By differentiating the $y^n(x)$ with respect to the parameters $x^\mu$, we get
 \[
@@ -38,32 +62,46 @@ Hence
  g_{\mu\nu} = y^n_{,\mu} y_{n,\nu}.
 \end{equation}
 
-Take a contravariant vector $A^\mu$ in physical space, located at the point x. Its components $A^\mu$ are like the $\delta x^\mu$ of (\ref{ecuacion 6.2}). Thus
+Take a contravariant vector $A^\mu$ in physical space, located at the point x. 
+Its components $A^\mu$ are like the $\delta x^\mu$ of (\ref{ecuacion 6.2}). Thus
 \begin{equation}
  \label{ecuacion 6.4}
  A^n = y^n_{,\mu}A^\mu.
 \end{equation}
 
-Now, shift the vector $A^n$, keeping it parallel to itself (which means, of course, keeping its components constant), to a neighboring point $x + dx$ in the surface. It will no longer lie in the surface at the new point, on account of the curvature of the surface. But we can project it on to the surface, to get a definite vector lying on the surface.
+Now, shift the vector $A^n$, keeping it parallel to itself (which means, of 
+course, keeping its components constant), to a neighboring point $x + dx$ in the 
+surface. It will no longer lie in the surface at the new point, on account of 
+the curvature of the surface. But we can project it on to the surface, to get a 
+definite vector lying on the surface.
 
-The projection process consists in splitting the vector into two parts, a tangential part and a normal part, and discarding the normal part. Thus
+The projection process consists in splitting the vector into two parts, a 
+tangential part and a normal part, and discarding the normal part. Thus
 \begin{equation}
  \label{ecuacion 6.5}
  A^n = A^n_{\mbox{tan}} + A^n_{\mbox{nor}}.
 \end{equation}
 
-Now, if $K^\mu$ denotes the components of $A^n_{\mbox{tan}}$ referred to the $x$ coordinate system in the surface, we have, corresponding to (\ref{ecuacion 6.4}),
+Now, if $K^\mu$ denotes the components of $A^n_{\mbox{tan}}$ referred to the 
+$x$ coordinate system in the surface, we have, corresponding to (\ref{ecuacion 
+6.4}),
 \begin{equation}
  \label{ecuacion 6.6}
  A^n_{\mbox{tan}} = K^\mu y^n_{,\mu}(x + dx),
 \end{equation}
 with the coefficients $y^n_{,\mu}$ taken at the new point $x+ dx$.
 
-$A^n_{\mbox{nor}}$ is defined to be orthogonal to every tangential vector at the point $x+dx$, and thus to every vector like the right-hand side of (\ref{ecuacion 6.6}), no matter what the $K^\mu$ are. Thus(\footnote{Here, Dirac assumes that the metric is positive (or negative) which is not the case for the space-time of relativity. Therefore, this mathematical argument supports, at most, an analogy between Einstein's space-time and a Riemann space.})
+$A^n_{\mbox{nor}}$ is defined to be orthogonal to every tangential vector at 
+the point $x+dx$, and thus to every vector like the right-hand side of 
+(\ref{ecuacion 6.6}), no matter what the $K^\mu$ are. Thus(\footnote{Here, Dirac 
+assumes that the metric is positive (or negative) which is not the case for the 
+space-time of relativity. Therefore, this mathematical argument supports, at 
+most, an analogy between Einstein's space-time and a Riemann space.})
 \[
  A^n_{\mbox{nor}} y_{n,\mu}(x + dx) = 0.
 \]
-If we now multiply (6.5) by $y_{n,\nu} (x+dx)$ the $A^n_{\mbox{nor}}$ term drops out and we are left with
+If we now multiply (6.5) by $y_{n,\nu} (x+dx)$ the $A^n_{\mbox{nor}}$ term 
+drops out and we are left with
 \[
  \begin{array}{rcl}
   A^n y_{n,\nu}(x + dx ) & = & K^\mu y^n_{,\mu}(x+dx)_{n,\nu}(x + dx)\\
@@ -78,11 +116,13 @@ from (\ref{ecuacion 6.3}). Thus, to the first order in $dx$
                   & = & A_\nu + A^\mu y^n_{,\mu} y_{n,\nu,\sigma} d x^\sigma
  \end{array}
 \]
-This $K_\nu$ is the result of parallel displacement of $A_\nu$ to the point $x+ dx$. We may put
+This $K_\nu$ is the result of parallel displacement of $A_\nu$ to the point $x+ 
+dx$. We may put
 \[
  K_\nu - A_\nu = d A_\nu,
 \]
-so $dA_\nu$ denotes the change in $A_\nu$ under parallel displacement. Then we have
+so $dA_\nu$ denotes the change in $A_\nu$ under parallel displacement. Then we 
+have
 \begin{equation}
  \label{ecuacion 6.7}
  d A_\nu = A^\mu y^n_{,\mu} y_{n,\nu,\sigma} d x^\sigma
