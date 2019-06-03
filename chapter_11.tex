@@ -32,6 +32,96 @@ $T_{\nu\rho}$ we get
   - \Gamma^{\alpha}_{\rho\sigma}  \left( 
       A_{\nu,\alpha} - \Gamma^{\beta}_{\nu\alpha} A_{\beta}
   \right)\\
+  & = & A_{\nu,\rho\sigma} 
+      - \Gamma^{\alpha}_{\nu\rho} A_{\alpha,\sigma}
+      - \Gamma^{\alpha}_{\nu\sigma} A_{\alpha,\rho}
+      - \Gamma^{\alpha}_{\rho\sigma} A_{\nu,\alpha}\\
+      & & 
+      -A_{\beta}\left(
+        \Gamma^{\beta}_{\nu\rho,\sigma}
+      - \Gamma^{\alpha}_{\nu\sigma}\Gamma^{\beta}_{\alpha\rho}
+      - \Gamma^{\alpha}_{\rho\sigma}\Gamma^{\beta}_{\nu\alpha}
+      \right)
  \end{array}
 \]
+Interchange $\rho$ and $\sigma$ here and subtract from the previous expression. 
+The result is
+\begin{equation}
+ \label{ecuacion 11.2}
+ A_{\nu:\rho:\sigma} - A_{\nu:\sigma:\rho} =
+ A_{\beta}R^{\beta}_{\nu\rho\sigma}
+\end{equation}
+where
+\begin{equation}
+ \label{ecuacion 11.3}
+ R^{\beta}_{\nu\rho\sigma} = 
+ \Gamma^{\beta}_{\nu\sigma,\rho} - \Gamma^{\beta}_{\nu\rho,\sigma}
+ + \Gamma^{\alpha}_{\nu\sigma}\Gamma^{\beta}_{\alpha\rho}
+ - \Gamma^{\alpha}_{\nu\rho}\Gamma^{\beta}_{\alpha\sigma}
+\end{equation}
+
+The left hand of (\ref{ecuacion 11.2}) is a tensor. It follows that the 
+right-hand side of (\ref{ecuacion 11.2}) is a tensor. This holds for any vector 
+$A_{\beta}$; therefore, by the quotient theorem in Section 4, 
+$R^{\beta}_{\nu\rho\sigma}$ is a tensor. It is called the Riemann-Christoffel 
+tensor or the curvature tensor.
+
+It has the obvious property 
+\begin{equation}
+ \label{ecuacion 11.4}
+ R^{\beta}_{\nu\rho\sigma} = - R^{\beta}_{\nu\sigma\rho}
+\end{equation}
+Also we easily see from (\ref{ecuacion 11.3}) that
+\begin{equation}
+ \label{ecuacion 11.5}
+   R^{\beta}_{\nu\rho\sigma} 
+ + R^{\beta}_{\rho\sigma\nu} 
+ + R^{\beta}_{\sigma\nu\rho} = 0
+\end{equation}
+
+Let us lower the suffix $\beta$ and put it as the first suffix. We get
+\[
+ R_{\mu\nu\sigma\rho} = g_{\mu\beta} R^{\beta}_{\nu\sigma\rho} =
+ g_{\mu\beta} \Gamma^{\beta}_{\nu\sigma,\rho} 
+ + \Gamma^{\alpha}_{\nu\alpha} \Gamma_{\mu\alpha\rho} - \langle \rho\sigma 
+\rangle,
+\]
+where the symbol $\langle \rho \sigma \rangle$ is used to denote the preceding 
+terms with $\rho$ and $\sigma$ interchanged. Thus
+\[
+ \begin{array}{rcl}
+  R_{\mu\nu\sigma\rho} & = & R_{\mu\nu\sigma,\rho} - 
+g_{\mu\beta,\rho}\Gamma^{\beta}_{\nu\sigma} + 
+\Gamma_{\mu\beta\rho}\Gamma^{\beta}_{\nu\sigma} - \langle \rho\sigma \rangle \\
+& = & \Gamma_{\mu\nu\sigma,\rho} - 
+\Gamma_{\beta\mu\rho}\Gamma^{\beta}_{\nu\sigma} - \langle \rho\sigma \rangle
+ \end{array}
+\]
+from (\ref{ecuacion 7.6}). So from (\ref{ecuacion 7.5})
+\begin{equation}
+ \label{ecuacion 11.6}
+ R_{\mu\nu\sigma\rho} = \frac{1}{2}
+ \left(
+       g_{\mu\sigma,\nu\rho} 
+     - g_{\nu\sigma,\mu\rho} 
+     - g_{\mu\rho,\nu\sigma}
+     - g_{\nu\rho,\nu\sigma}
+ \right)
+ + \Gamma_{\beta\mu\sigma}\Gamma^{\beta}_{\nu\rho}
+ - \Gamma_{\beta\mu\rho}\Gamma^{\beta}_{\nu\sigma}
+\end{equation}
+
+Some further symmetries now show up; namely,
+\begin{equation}
+ \label{ecuacion 11.7}
+ R_{\mu\nu\rho\sigma} = - R_{\nu\mu\rho\sigma}
+\end{equation}
+and
+\begin{equation}
+ \label{ecuacion 11.8}
+ R_{\mu\nu\rho\sigma} = R_{\rho\sigma\mu\nu} = R_{\sigma\rho\nu\mu}
+\end{equation}
+The result of all these symmetries is that, of the 256 components of 
+$R_{\mu\nu\rho\sigma}$, only 20 are independent.
+
 
