@@ -1,30 +1,53 @@
-If space is flat, we may choose a system of coordinates that is rectilinear and 
-then the $g_{\mu\nu}$ are constant. The tensor $R_{\mu\nu\rho\sigma}$ then 
-vanishes.
+If space is flat, we may choose a system of coordinates that is rectilinear and then the $g_{\mu\nu}$ are constant. The 
+tensor $R_{\mu\nu\rho\sigma}$ then vanishes.
 
-Conversely, if $R_{\mu\nu\rho\sigma}$ vanishes, one can prove that the space is 
-flat. Let us take a vector $A_{\mu}$ situated at the point $x$ and shift it by 
-parallel displacement to the point $x+dx$. Then shift it by parallel 
-displacement to the point $x+dx+\delta x$. If $R_{\mu\nu\rho\sigma}$ vanishes, 
-he result must be the same as if we had shifted it first from $x$ to $x+\delta 
-x$, then to $x+\delta x+ dx$. Thus we can shift the vector to a distant point 
-and the result we get is independent of the path to the distant point. 
-Therefore, if we shift the original vector $A_{\mu}$ at $x$ to all points by 
-parallel displacement, we get a vector field that satisfies $A_{\mu:\nu}=0$, or
+Conversely, if $R_{\mu\nu\rho\sigma}$ vanishes, one can prove that the space is flat. Let us take a vector $A_{\mu}$ 
+situated at the point $x$ and shift it by parallel displacement to the point $x+dx$. Then shift it by parallel 
+displacement to the point $x+dx+\delta x$. If $R_{\mu\nu\rho\sigma}$ vanishes, he result must be the same as if we had 
+shifted it first from $x$ to $x+\delta x$, then to $x+\delta x+ dx$. Thus we can shift the vector to a distant point and 
+the result we get is independent of the path to the distant point. Therefore, if we shift the original vector $A_{\mu}$ 
+at $x$ to all points by parallel displacement, we get a vector field that satisfies $A_{\mu:\nu}=0$, or
 \begin{equation}
  \label{ecuacion 12.1}
  A_{\mu,\nu} = \Gamma^{\alpha}_{\mu\nu}.
 \end{equation}
 
-Can such a vector field be the graident of a scalar? Let us put $A_{\mu} = 
+Can such a vector field be the gradient of a scalar? Let us put $A_{\mu} = 
 S_{\mu}$ in (\ref{ecuacion 12.1}). We get 
 \begin{equation}
- \ref{ecuacion 12.2}
+ \label{ecuacion 12.2}
  S_{,\mu\nu} = \Gamma^{\alpha}_{\mu\nu} S_{\alpha}
 \end{equation}
-By virtue of the symmetry of $\Gamma^{\alpha}_{\mu\nu}$ in the lower suffixes, 
-we have the same value for $S_{,\mu\nu}$ as $S_{,\nu\mu}$ and the equations 
-(\ref{ecuacion 12.2}) are integrable.
+By virtue of the symmetry of $\Gamma^{\alpha}_{\mu\nu}$ in the lower suffixes, we have the same value for $S_{,\mu\nu}$ 
+as $S_{,\nu\mu}$ and the equations (\ref{ecuacion 12.2}) are integrable.
 
-Let us take four independent scalars satisfying (\ref{ecuacion 12.2}) and let 
-them to be the coordinates $x^{\alpha'}$ of a new system of coordinates.
+Let us take four independent scalars satisfying (\ref{ecuacion 12.2}) and let them to be the coordinates $x^{\alpha'}$ 
+of a new system of coordinates. Then
+\[
+ x^{\alpha'}_{,\mu\nu} = \Gamma^{\sigma}_{\mu\nu} x^{\alpha'}_{,\sigma}.
+\]
+
+According the transformation law (\ref{ecuacion 3.7}),
+\[
+g_{\mu\lambda} = g_{\alpha'\beta'}x^{\alpha'}_{,\mu}x^{\beta'}_{,\lambda}.
+\]
+Differentiating this equation with respect to $x^{\nu}$, we get
+\[
+\begin{array}{rcl}
+ g_{\mu\lambda,\nu} - g_{\alpha'\beta',\nu}x^{\alpha'}_{,\mu}x^{\beta'}_{,\lambda} & = & 
+    g_{\alpha'\beta'}\left(x^{\alpha'}_{,\mu\nu}x^{\beta'}_{,\lambda} 
+    + x^{\alpha'}_{,\mu}x^{\beta'}_{,\lambda\nu} \right) \\
+    & = & g_{\alpha'\beta'}\left(
+    \Gamma^{\sigma}_{\mu\nu} x^{\alpha'}_{,\sigma} x^{\beta'}_{,\lambda} 
+    + x^{\alpha'}_{,\mu} \Gamma^{\sigma}_{\lambda\nu} x^{\beta'}_{,\sigma}
+    \right)\\
+    & = & g_{\sigma\lambda} \Gamma^{\sigma}_{\mu\nu} + g_{\mu\sigma} \Gamma^{\sigma}_{\lambda\nu}\\
+    & = & \Gamma_{\lambda\mu\nu} + \Gamma_{\mu\lambda\nu} = g_{\mu\lambda,\nu}
+\end{array}
+\]
+from (\ref{ecuacion 7.6}). Thus
+\[
+g_{\alpha'\beta',\nu}x^{\alpha'}_{,\mu}x^{\beta'}_{,\lambda} = 0.
+\]
+It follows that $g_{\alpha'\beta',\nu}=0$. Referred to the new system of coordinates, the fundamental tensor is 
+constant. Thus we have flat space referred to rectilinear coordinates.
