@@ -1,0 +1,57 @@
+To deal with the second covariant derivative of a tensor, take first the case in which the tensor is the outer product 
+of two vectors $A_{\mu} B_{\tau}$. We have
+\[
+\begin{array}{rcl}
+ \left( A_{\mu} B_{\tau}\right)_{:\rho:\sigma} & = & \left( A_{\mu:\rho} B_{\tau} + A_{\mu} B_{\tau:\rho} \right)\\
+      & = & A_{\mu:\rho:\sigma} B_{\tau} + A_{\mu:\rho} B_{\tau:\sigma} + A_{\mu:\sigma} B_{\tau:\rho} 
+      + A_{\mu} B_{\tau:\rho:\sigma}.
+\end{array}
+\]
+Now interchange $\rho$ and $\sigma$ and subtract. We get from (\ref{ecuacion 11.2})
+\[
+\left( A_{\mu} B_{\tau}\right)_{:\rho:\sigma} - \left( A_{\mu} B_{\tau}\right)_{:\sigma:\rho} = 
+   A_{\alpha}R^{\alpha}_{\mu\rho\alpha} B_{\tau} + A_{\mu}R^{\alpha}_{\tau\rho\sigma} B_{\alpha}.
+\]
+A general tensor $T_{\mu\tau}$ is expressible as a sum of terms like $A_{\mu} B_{\tau}$, so it must satisfy
+\begin{equation}
+ \label{ecuacion 13.1}
+ T_{\mu\tau:\rho:\sigma} - T_{\mu\tau:\sigma:\rho} =
+ T_{\alpha\tau}R^{\alpha}_{\mu\rho\sigma} - T_{\mu\alpha}R^{\alpha}_{\tau\rho\sigma}.
+\end{equation}
+
+Now take $T_{\mu\tau}$ to be the covariant derivative of a vector $A_{\mu:\tau}$. We get
+\[
+A_{\mu:\tau:\rho:\sigma} - A_{\mu:\tau:\sigma:\rho}
+= A_{\alpha:\tau} R^{\alpha}_{\mu\rho\sigma} + A_{\mu:\alpha} R^{\alpha}_{\tau\rho\sigma}.
+\]
+In this formula make cyclic permutations of $\tau$, $\rho$, $\sigma$ and add the three equations so obtained. The left 
+hand side gives
+\begin{equation}
+ \label{ecuacion 13.2}
+    \begin{array}{cl}
+          & A_{\mu:\tau:\rho:\sigma} - A_{\mu:\tau:\sigma:\rho} + \mbox{ cyc perm} \\
+        = & \left( A_{\alpha} R^{\alpha}_{\mu\rho\sigma} \right)_{:\tau} + \mbox{ cyc perm} \\
+        = & A_{\alpha:\tau} R^{\alpha}_{\mu\rho\sigma} + A_{\mu:\alpha} R^{\alpha}_{\tau\rho\sigma}
+        + \mbox{ cyc perm}.
+    \end{array}
+\end{equation}
+The right-hand side gives 
+\begin{equation}
+ \label{ecuacion 13.3}
+    A_{\alpha:\tau} R^{\alpha}_{\mu\rho\sigma} + \mbox{ cyc perm},
+\end{equation}
+as the remaining terms cancel from (\ref{ecuacion 11.5}). The first term of (\ref{ecuacion 13.2}) cancels with 
+(\ref{ecuacion 13.3}) and we are left with
+\[
+   A_{\alpha} R^{\alpha}_{\mu\rho\sigma:\tau} + \mbox{ cyc perm} = 0.
+\]
+The factor $A_{\alpha}$ occurs throughout this equation and may be canceled out. We are left with
+\begin{equation}
+ \label{ecuacion 13.4}
+ R^{\alpha}_{\mu\rho\sigma:\tau} + 
+ R^{\alpha}_{\mu\sigma\tau:\rho} + 
+ R^{\alpha}_{\mu\tau\rho:\sigma} = 0
+\end{equation}
+
+The curvature tensor satisfies these differential equations as well as other symmetry relations in Section 11. They are 
+known as the Bianci relations.
