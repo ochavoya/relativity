@@ -57,8 +57,36 @@ or
 which is the Bianci relation for the Ricci tensor. If we raise the suffix $\sigma$, we get
 \begin{equation}
  \label{ecuacion 14.3}
- \left( R^{\sigma \alpha} - \frac{1}{2} g^{\sigma \alpha R}\right)_{:\alpha} = 0
+ \left( R^{\sigma \alpha} - \frac{1}{2} g^{\sigma \alpha} R\right)_{:\alpha} = 0
 \end{equation}
 
+The explicit expression for the Ricci tensor is, from (\ref{ecuacion 11.3})
+\begin{equation}
+ \label{ecuacion 14.4}
+ R_{\mu\nu} = \Gamma^{\alpha}_{\mu\alpha,\nu} - \Gamma^{\alpha}_{\mu\nu,\alpha}
+ + \Gamma^{\alpha}_{\mu\beta}\Gamma^{\beta}_{\nu\alpha} - \Gamma^{\alpha}_{\mu\nu}\Gamma^{\beta}_{\alpha\beta}
+\end{equation}
+The first term here does not appear to be symmetrical in $\mu$ and $\nu$, although the other three terms evidently are. 
+To establish that the first term really is symmetrical we need a little calculation.
+
+To differentiate the determinant $g$ we must differentiate each element $g_{\lambda\mu}$ and then multiply for the 
+cofactor $g g^{\lambda\mu}$. Thus
+\begin{equation}
+ \label{ecuacion 14.5}
+ g_{,\nu} = g g^{\lambda\mu} g_{\lambda\mu,\nu}.
+\end{equation}
+Hence 
+\begin{equation}
+ \label{ecuacion 14.6}
+ \begin{array}{rcl}
+    \Gamma^{\mu}_{\lambda\mu} & = & g^{\lambda\mu}\Gamma_{\lambda\nu\mu} =
+    \frac{1}{2}\left(
+        g_{\lambda\nu,\mu} + g_{\lambda\mu,\nu} - g_{\mu\nu,\lambda}
+    \right)\\
+    & = & \frac{1}{2} g^{\lambda\mu} g_{\lambda\mu,\nu} = \frac{1}{2} g^{-1}g_{\nu}
+    = \frac{1}{2} \left( log(g) \right)_{,\nu}.
+ \end{array}
+\end{equation}
+This makes it evident that the first term of (\ref{ecuacion 14.4}) is symmetrical.
 
 
