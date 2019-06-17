@@ -11,8 +11,56 @@ and $g^{mn}$ is the reciprocal matrix to $g_{mn}$. Roman suffixes like $m$ and $
 We find that $\Gamma_{m0n} = 0$ and hence also $\Gamma^{m}_{0n}=0$.
 
 Let us take a particle that is moving slowly, compared with the velocity of light. Then $v^m$ is a small quantity, of 
-the first order. With neglect of second order quantities,
+the first order(\footnote{compared to $v^0$.}). With neglect of second order quantities,
 \begin{equation}
  \label{ecuacion 16.1}
  g_{00} {v^{0}}^2 = 1.
 \end{equation}
+The particle will move along a geodesic. With neglect of second-order quantities, the equation (\ref{ecuacion 8.3}) 
+gives
+\[
+\begin{array}{rcl}
+ \frac{dv^m}{ds} & = & -\Gamma^m_{00}{v^0}^2 = -g^{mn} \Gamma_{n00}{v^0}^2\\
+                 & = & = \frac{1}{2} g^{mn}g_{00,n} {v^0}^2. 
+\end{array}
+\]
+Now
+\[
+ \frac{dv^m}{ds} = \frac{dv^m}{dx^0} \frac{dx^0}{ds} = frac{dv^m}{dx^0}v^0
+\]
+to the first order. Thus
+\begin{equation}
+ \label{ecuacion 16.2}
+ \frac{dv^m}{dx^0} = \frac{1}{2} g^{mn}g_{00,n}v^0 = g^{mn}\left( {g_{00}}^{1/2} \right)_{,n}
+\end{equation}
+with the help of (\ref{ecuacion 16.1}). Since the $g_{\mu\nu}$ are independent of $x^0$, we may lower the suffix $m$ 
+here and get
+\begin{equation}
+ \label{ecuacion 16.3}
+ \frac{dv^m}{dx^0} = \left( {g_{00}}^{1/2} \right)_{,m} .
+\end{equation}
+
+We see that the particle moves as thought it were under the influence of a potential $\left({g_{00}}^{1/2}\right)$. We 
+have not used Einstein's law to obtain this result. We now use Einstein's law to obtain a condition for the potential, 
+so that it can be compared with Newton's.
+
+Let us suppose that the gravitational field is weak, so that the curvature of space is small. Then we may choose our 
+coordinate system so that the curvature of the coordinate lines (each with three $x$'s constant) is small. Under those 
+conditions the $g_{\mu\nu}$ are approximately constant, and $g_{\mu\nu,\sigma}$ and all the Christoffel symbols are 
+small. If we count them of the first order and neglect second-order quantities, Einstein's law (\ref{ecuacion 15.1}) 
+becomes, from (\ref{ecuacion 14.4})
+\[
+ \Gamma^{\alpha}_{\mu\alpha,\nu} - \Gamma^{\alpha}_{\mu\nu,\alpha} = 0.
+\]
+We can evaluate this most conveniently by contracting (\ref{ecuacion 11.6}) with $\rho$ and $\mu$ interchanged and 
+neglecting second-order terms. The result is
+\begin{equation}
+ \label{ecuacion 16.4}
+ g^{\rho\sigma} \left( 
+      g_{\rho\sigma,\mu\nu} 
+    - g_{\nu\sigma,\mu\rho} 
+    - g_{\mu\rho,\nu\sigma} 
+    + g_{\mu\nu,\rho\sigma}  \right) = 0.
+\end{equation}
+
+
