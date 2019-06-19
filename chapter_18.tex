@@ -10,4 +10,21 @@ with spherical symmetry is
 \[
  ds^2 = U dt^2 - V dr^2 -W r^2(d\theta^2 + \sin^2\theta d\phi^2),
 \]
-where $U$, $V$, and $W$ are functions of $r$ only.
+where $U$, $V$, and $W$ are functions of $r$ only. We may replace $r$ by any function of $r$ without disturbing the 
+spherical symmetry. We use this freedom to simplify things as much as possible, and the most convenient arrangement is 
+to have $W=1$. The expression for $ds^2$ may then be written as 
+\begin{equation}
+ \label{ecuacion 18.1}
+ ds^2 = e^{2\nu} dt^2 - e^{2\lambda} dr^2 - r^2 d\theta^2 - r^2 \sin^2 \theta d\phi^2,
+\end{equation}
+with $\nu$ and $\lambda$ functions of $r$ only. They must be chosen to satisfy the Einstein equations. We can read off 
+the values of the $g_{\mu\nu}$ from (\ref{ecuacion 18.1}), namely,
+\[
+\begin{array}{cccc}
+ g_00 = e^{2\nu}, & g_{11} = e^{-2\lambda}, & g_{22} = -r^2, & g_{33} = - r^2 \sin^2\theta,
+\end{array}
+\]
+and 
+\[
+g_{\mu\nu} = 0 \mbox{ for } \mu \ne \nu .
+\]
