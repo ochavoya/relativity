@@ -41,6 +41,62 @@ and
 \]
 
 It is now necessary to calculate all the Christoffel symbols $\Gamma^\sigma_{\mu\nu}$. Many of them vanish. The ones 
-that do not are, with primes denoting differentiation with respect to $r$:
+that do not are(\footnote{With primes denoting differentiation with respect to $r$.}):
+\[
+ \begin{array}{ll}
+   \Gamma^1_{00} = \nu' e^{2\nu - 2 \lambda}       & \Gamma^0_{10} =  \nu' \\
+   \Gamma^1_{11} = \lambda'                        & \Gamma^2_{12} = \Gamma^3_{13} = r^{-1}\\
+   \Gamma^1_{22} = - r e^{-2\lambda}               & \Gamma^2_{23} = \cot \theta \\
+   \Gamma^1_{33} = - r \sin^2 \theta e^{-2\lambda} & \Gamma^2_{33} = - \sin \theta \cos \theta
+ \end{array}
+\]
+These expressions are to be substituted in (\ref{ecuacion 14.4}). The results are
+\begin{equation}
+ \label{ecuacion 18.2}
+ R_{00} = \left( - \nu'' + \lambda' \nu' - {\nu'}^2 - \frac{2 \nu'}{r} \right) e^{2 \nu - 2 \lambda},
+\end{equation}
+\begin{equation}
+ \label{ecuacion 18.3}
+ R_{11} = \nu'' - \lambda' \nu' + {\nu'}^2 - \frac{2 \lambda'}{r},
+\end{equation}
+\begin{equation}
+ \label{ecuacion 18.4}
+ R_{22} = (1 + r \nu' - r \lambda' ) e^{-2\lambda} -1,
+\end{equation}
+\[
+ R_{33} = R_{22} \sin^2 \theta,
+\]
+with the other components of $R_{\mu\nu}$ vanishing.
+
+Einstein's law of gravitation requires these expressions to vanish. The vanishing of (\ref{ecuacion 18.2}) and 
+(\ref{ecuacion 18.3}) leads to
+\[
+ \lambda' + \nu' = 0. 
+\]
+For large values of $r$ the space must approximate to being flat, so that $\lambda$ and $\nu$ both tend to zero as 
+$r\rightarrow \infty$. It follows that
+\[
+ \lambda + \nu = 0.
+\]
+The vanishing of (\ref{ecuacion 18.4}) now gives
+\[
+ (1 + 2 r \nu') e^{2\nu} = 1
+\]
+or
+\[
+ \left( r e^{2\nu}\right)' = 1.
+\]
+Thus 
+\[
+ r e^{2\nu} = r - 2m,
+\]
+where $m$ is a constant of integration. This also makes (\ref{ecuacion 18.2}) and (\ref{ecuacion 18.3}) vanish. We now 
+get
+\begin{equation}
+ \label{ecuacion 18.5}
+ g_{00} = 1 - \frac{2 m}{r}
+\end{equation}
+
+
 
 
