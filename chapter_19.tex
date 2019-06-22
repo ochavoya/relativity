@@ -5,5 +5,22 @@ so.
 Consider a particle falling into the central body and let its velocity vector be $v^\mu = d z^\mu / ds$. Let us suppose 
 that it falls in radially, so that $v^2=v^3=0$. The motion is determined by the geodesic equation (\ref{ecuacion 8.3}):
 \[
- \frac{dv^0}{ds} = - \Gamma^0_{\mu\mu}
+ \begin{array}{rcl}
+  \frac{dv^0}{ds} & = & - \Gamma^0_{\mu\mu} v^\mu v^\nu = -g^{00} \Gamma_{0\mu\nu} v^\mu v^\nu\\
+         & = & -g^{00} g_{00,1} v^0 v^1 = - g^{00} \frac{dg_{00}}{ds} v^0 .
+ \end{array}
 \]
+
+Now $g^{00}= \frac{1}{g_{00}}$, so we get
+\[
+  g_{00} \frac{dv^0}{ds} + \frac{dg_{00}}{ds} v^0 = 0.
+\]
+This integrates to
+\[
+ g_{00} v^0 = k,
+\]
+with $k$ a constant. It is the value of $g_{00}$ where the particle starts to fall.
+
+
+
+
