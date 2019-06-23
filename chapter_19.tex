@@ -21,6 +21,82 @@ This integrates to
 \]
 with $k$ a constant. It is the value of $g_{00}$ where the particle starts to fall.
 
+Again, we have
+\[
+ 1 = g_{\mu\nu} v^\mu v^\nu = g_{00} {v^0}^2 + g_{11} {v^1}^2 .
+\]
+Multiplying this equation by $g_{00}$ and using $g_{00} g_{11} = -1$, which we obtained in the last section, we find
+\[
+ k^2 - {v^1}^2 = g_{00} = 1 - \frac{2 m }{r}.
+\]
+For a falling body $v^1<0$ and hence
+\[
+ v^1 = - \left( k^2 - 1 + \frac{2m}{r} \right)^{\frac{1}{2}}.
+\]
+
+Now
+\[
+ \frac{dt}{dr} = \frac{v^0}{v^1} = - k \left( 1 - \frac{2 m}{r} \right)^{-1}
+ \left( k^2 - 1 + \frac{2m}{r} \right)^{-\frac{1}{2}}.
+\]
+Let us suppose the particle is close to the critical radius, so $r = 2 m + \epsilon$ with $\epsilon$ small, and let us 
+neglect $\epsilon^2$. Then 
+\[
+ \frac{dt}{dr} \approx - \frac{2 m }{\epsilon} = - \frac{2 m}{r - 2m}.
+\]
+This integrates to
+\[
+ t = - 2 m \log (r - 2 m) + \mbox{ constant}.
+\]
+Thus, as $r\rightarrow 2m$ $t\rightarrow \infty$. The particle takes an infinite time to reach the critical radius $r = 
+2 m$.
+
+Let us suppose the particle is emitting light of a certain spectral line, and is being observed by someone at a large 
+value of $r$. The light is red-shifted by a factor of ${g_{00}}^{-1/2}$. This factor becomes infinite as the particle 
+approaches the critical radius. All physical processes on the particle will be observed to be going more and more 
+slowly as it approaches $r=2m$.
+
+Now consider an observer traveling with the particle. His time scale is measured by $ds$. Now 
+\[
+ \frac{ds}{dr} = \frac{1}{v^1} = - \left( k^2 - 1 + \frac{2 m }{r} \right) ^{-1/2},
+\]
+and this tends to $-k^{-1}$ as $r$ tends to $2m$. Thus, the particle reaches $r = 2m$ after a lapse of finite proper 
+time for the observer. The traveling observer has aged only a finite amount when he reaches $r = 2m$. What will happen 
+to him afterwards? He may continue sailing through empty space into smaller values of $r$.
+
+To examine the continuation of the Schwarzschild solution for values of $r < 2 m$, it is necessary to use a non static 
+system of coordinates, so that we have  the $g_{\mu\nu}$ varying with the time coordinate. We keep the coordinates 
+$\theta$ and $\phi$ unchanged, but instead of $t$ and $r$ we use $\tau$ and $\rho$, defined by
+\begin{equation}
+ \label{ecuacion 19.1}
+ \tau = t + f(r)\, \rho = t + g(r),
+\end{equation}
+where the functions $f$ and $g$ are at our disposal.
+
+We have, using the prime again to denote derivative with respect to $r$,
+\begin{equation}
+ \label{ecuacion 19.2}
+ \begin{array}{rcl}
+   d\tau^2 - \frac{2 m}{3} d\rho^2 & = & (d t + f' dr)^2 - \frac{2 m}{r}(dt + g' dr)^2 \\
+   & = & \left( 1 - \frac{2m}{r} \right)dt^2 + 2 \left( f' - \frac{2m}{r} g' \right) dt dr   
+   + \left( f'^2 - \frac{2m}{r} g'^2 \right)dr^2\\
+   & = & \left(1 - \frac{2m}{r}\right)dt^2 - \left(1 - \frac{2m}{r}\right)^{-1} dr^2
+ \end{array}
+\end{equation}
+provided we choose the functions $f$ and $g$ to satisfy
+\begin{equation}
+ \label{ecuacion 19.3}
+ f' = \frac{2 m}{r} g'
+\end{equation}
+and
+\begin{equation}
+ \label{ecuacion 19.4}
+ \frac{2m}{r}g'^2 - f'^2 = \left(1 - \frac{2m}{r}\right)^{-1}
+\end{equation}
+
+
+
+
 
 
 
