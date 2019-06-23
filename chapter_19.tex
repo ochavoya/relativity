@@ -91,9 +91,70 @@ provided we choose the functions $f$ and $g$ to satisfy
 and
 \begin{equation}
  \label{ecuacion 19.4}
- \frac{2m}{r}g'^2 - f'^2 = \left(1 - \frac{2m}{r}\right)^{-1}
+ \frac{2m}{r}g'^2 - f'^2 = \left(1 - \frac{2m}{r}\right)^{-1}.
 \end{equation}
+Elimination of $f$ from these equations gives
+\begin{equation}
+ \label{ecuacion 19.5}
+ g' = \left( \frac{r}{2 m} \right)^{1/2} \left(
+     1 = \frac{2 m}{r}
+ \right)^{-1}
+\end{equation}
+To integrate this equation, put $r = y^2$ and $2 m = a^2$. With $r > 2m$ we have $y > a$. We now have
+\[
+  \frac{dg}{dy} = 2 y \frac{dg}{dr} = \frac{2 y^4}{a} \frac{1}{y^2 - a^2},
+\]
+\begin{equation}
+ \label{ecuacion 19.6}
+ g = \frac{2}{3a} y^3 + 2 a y - a^2 \log \frac{y + 1}{y - a}.
+\end{equation}
+Finally we get from (\ref{ecuacion 19.3}) and (\ref{ecuacion 19.5})
+\[
+g'-f' = \left( 1 - \frac{2 m }{r} \right) g' = \left(\frac{r}{2 m}\right)^{1/2},
+\]
+which integrates to 
+\begin{equation}
+ \label{ecuacion 19.7}
+ \frac{2}{3} \frac{1}{\sqrt{2m}} r^{3/2} = g - f = \rho - \tau .
+\end{equation}
+Thus
+\begin{equation}
+ \label{ecuacion 19.8}
+ r = \mu (\rho - \tau)^{2/3},
+\end{equation}
+with 
+\[
+\mu = \left(\frac{3}{2} \sqrt{2 m}\right)^{2/3}.
+\]
 
+In this way we see that we can satisfy the conditions (\ref{ecuacion 19.3}) and (\ref{ecuacion 19.4}) and so we can use 
+(\ref{ecuacion 19.2}). Substituting into the Schwarzschild solution (\ref{ecuacion 18.6}), we get
+\begin{equation}
+ \label{ecuacion 19.9}
+ ds^2 = d\tau^2 - \frac{2 m}{\mu (\rho - \tau)^{2/3}} d\rho^2 - \mu^2 (\rho - \tau)^{4/3}
+ \left( d\theta^2 + \sin^2 \theta d\phi^2 \right).
+\end{equation}
+The critical value $r = 2 m$ corresponds, from (\ref{ecuacion 19.7}), to $\rho - \tau = 4 m/3$. There is no singularity 
+here in the metric (\ref{ecuacion 19.9}).
+
+We know that the metric (\ref{ecuacion 19.9}) satisfies the Einstein equations for empty space in the region $r > 2m$, 
+because it can be transformed to the Schwarzschild solution by a mere change of coordinates. We can  infer that it 
+satisfies the Einstein equations for $r \le 2m $ from analytic continuity, because it doesn't involve any singularity 
+at $r=2m$. It may continue to hold down to $r=0$ or $\rho - \tau = 0$. The singularity appears in the connection 
+between the new coordinates and the original ones, equation (\ref{ecuacion 19.1}). But once we have established the 
+coordinate system we can disregard the previous one and the singularity no longer appears.
+
+We see that the Schwarzschild solution for empty space can be extended to the region $r<2m$. ut this region cannot 
+communicate with the space for which $r>m$. Any signal, even a light signal, will take an infinite time to reach the 
+boundary $r=2m$, as we can easily check. Thus we cannot have direct observational knowledge of the region $r < 2m$. 
+Such a region is called a black hole, because things can fall into it (taking and infinite time by our clocks, to do 
+so) but nothing can come out.
+
+The question arises whether such a region can actually exist. All we can say is that definitely the Einstein equations 
+allow it. A massive stellar object can collapse to a very small radius and the gravitational forces then become so 
+strong that no physical forces can hold them in check and prevent further collapse. It would seem that it would have to 
+collapse into a black hole. It would take an infinite time to do so by our clocks, but only a finite time relative to 
+the collapsing matter itself.
 
 
 
