@@ -1,0 +1,62 @@
+With a transformation of coordinates, an element of four-dimensional volume transforms according to the law
+\begin{equation}
+ \label{ecuacion 20.1}
+ {dx^0}'{dx^1}'{dx^2}'{dx^3}' = {dx^0}{dx^1}{dx^2}{dx^3} J,
+\end{equation}
+where $J$ is the Jacobian
+\[
+ J = \frac{\partial({x^0}',{x^1}',{x^2}',{x^3}')}{\partial({x^0},{x^1},{x^2},{x^3})}
+ = \mbox{ determinant of } x^{\mu'}_{,\nu}
+\]
+We may write (20.1)
+\[
+ d^4 x' = J d^4 x
+\]
+for brevity.
+
+Now
+\[
+   g_{\alpha\beta} = x^{\mu'}_{,\alpha} g_{\mu'\nu'} x^{\nu'}_{,\beta}.
+\]
+We can look upon the right side as the product of three matrices, the first matrix having its rows specified by 
+$\alpha$ and columns specified by $\mu'$, the second having its rows specified by $\mu'$ and columns by $\nu'$ and the 
+third having its rows specified by $\nu'$ and columns by $\beta$. This product equals the matrix $g_{\alpha\beta}$ on 
+the left. The corresponding equation must hold between the determinants; therefore
+\[
+ g = J g' J
+\]
+or
+\[
+ g = J^2 g'.
+\]
+
+Now, $g$ is a negative quantity, so we may form $\sqrt{-g}$, taking the positive value for he square root. Thus
+\begin{equation}
+ \label{ecuacion 20.3}
+ \sqrt{-g} = J \sqrt{- g'}.
+\end{equation}
+
+Suppose $S$ is a scalar field quantity, $S = S'$. Then
+\[
+\int{S \sqrt{-g} d^4 x} = \int{S \sqrt{-g'} J d^4 x} = \int{S' \sqrt{-g'} d^4 x'},
+\]
+if the region of integration for the $x'$ corresponds to that for the $x$. Thus
+\begin{equation}
+ \label{ecuacion 20.4}
+ \int{S \sqrt{-g} d^4 x} = \mbox{ invariant.}
+\end{equation}
+We call $S \sqrt{-g}$ a scalar density, meaning a quantity whose integral is invariant.
+
+Similarly, for any tensor field $T^{\mu\nu\cdots}$ we may call $T^{\mu\nu\cdots}\sqrt{-g}$ a tensor density. The 
+integral
+\[
+   \int{T^{\mu\nu\cdots}\sqrt{-g} d^4 x}
+\]
+is a tensor if the domain of integration is small. It is not a tensor if the domain of integration is not small, 
+because it then consists of a sum of tensors located at different points and it does not transform in any simple way in 
+a transformation of coordinates.
+
+The quantity $\sqrt{-g}$ will be very much used in the future. For brevity we shall write it simply as $\sqrt{}$. We 
+have
+
+
