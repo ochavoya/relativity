@@ -7,3 +7,28 @@ Thus
  \label{ecuacion 21.1}
  A^\mu_{;\mu} \sqrt{} = \left( A^\mu \sqrt{} \right)_{,\mu}.
 \end{equation}
+
+We can put $A^\mu_{;\mu}\sqrt{}$ for $S$ in (\ref{ecuacion 20.4}), and we get the invariant
+\[
+ \int {A^\mu_{;\mu}\sqrt{} d^4 x}
+  = \int { \left(A^\mu \sqrt{}\right)_{,\mu} d^4 x}.
+\]
+If the integral is taken over a finite (four-dimensional) volume, the right hand side can be converted by Gauss's 
+theorem to an integral over the boundary surface (three-dimensional) of that volume.
+
+If $A^\mu_{;\mu}=0$, we have 
+\begin{equation}
+ \label{ecuacion 21.2}
+ \left( A^\mu \sqrt{}\right)_{,\mu} = 0
+\end{equation}
+and this gives us a conservation law; namely, the conservation of a fluid whose density is $A^0\sqrt{}$ and whose flow 
+is given by the three-dimensional vector $A^m\sqrt{}(m=1,2,3)$. We may integrate (\ref{ecuacion 21.2}) over a 
+three-dimensional volume $V$ lying at a fixed time $x^0$(\footnote{I sense here an error of method because Dirac makes 
+the assumption that $x^0$ is strictly temporal.}). The result is
+\[
+\begin{array}{rcl}
+    \left(\int{A^0\sqrt{}d^3x}\right)_{,0} & = & - \int{\left(A^m\right)_{,m}d^3 x} \\
+                               & = & \mbox{ surface integral over boundary of } V
+\end{array} 
+\]
+
