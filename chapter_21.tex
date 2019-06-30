@@ -63,4 +63,48 @@ Hence $\int{{F^{\mu\nu}}_{;\nu} \sqrt{}d^4x} = \mbox{ a surface integral}$, and 
 conservation law.
 
 In the symmetrical case $Y^{\mu\nu} = Y^{\nu\mu}$ we can get a corresponding equation with an extra term, provided we 
-put one of the suffixes downstairs and deal with ${{Y_\mu}^\nu}_{;\nu}$
+put one of the suffixes downstairs and deal with ${{Y_\mu}^\nu}_{;\nu}$. We have
+\[
+ {{Y_\mu}^\nu}_{;\sigma} = {{Y_\mu}^\nu}_{,\sigma} - \Gamma^\alpha_{\mu\sigma} {{Y_\alpha}^\nu} 
+ + \Gamma^\nu_{\sigma\alpha} {{Y_\mu}^\alpha}.
+\]
+Putting $\sigma=\nu$ and using (\ref{ecuacion 20.6}), we get
+\[
+  {{Y_\mu}^\nu}_{;\nu} = {{Y_\mu}^\nu}_{,\nu} 
+ + \sqrt{}^{(-1)}\sqrt{}_{\alpha} {{Y_\mu}^\alpha}
+ - \Gamma_{\alpha\mu\nu} {Y^{\alpha\nu}}.
+\]
+Since $Y^{\mu\nu}$ is symmetrical, we can replace the $\Gamma_{\alpha\mu\nu}$ in the last term by
+\[
+\frac{1}{2}\left( \Gamma_{\alpha\nu\mu} + \Gamma_{\nu\alpha\mu} \right) = \frac{1}{2} g_{\alpha\nu,\mu}
+\]
+from (7.6). Thus we get
+\begin{equation}
+ \label{ecuacion 21.4}
+ {{Y_\mu}^\nu}_{;\nu} = {{Y_\mu}^\nu}_{,\nu} 
+ +  \left( {{Y_\mu}^\nu} \sqrt{} \right)_{,\nu}
+ - \frac{1}{2} g_{\alpha\beta,\mu} Y^{\alpha\beta}.
+\end{equation}
+For a covariant vector $A_\mu$, we have
+\begin{equation}
+ \label{ecuacion 21.5}
+ \begin{array}{rcl}
+ A_{\mu;\nu} - A_{\nu;\mu} & = & A_{\mu,\nu} - \Gamma^\rho_{\mu\nu} A_{\rho} - 
+ \left( A_{\nu,\mu} - \Gamma^\rho_{\nu\mu} A_{\rho} \right)\\
+ & = & A_{\mu,\nu} - A_{\nu,\mu}.
+ \end{array}
+\end{equation}
+
+Let us integrate this equation over an area of the surface $x^0 = \mbox{ constant}$, $x^3 = \mbox{ constant}$. From 
+Stokes theorem we get 
+\begin{equation}
+ \label{ecuacion 21.6}
+ \begin{array}{rcl}
+  \iint{\left( A_{1;2} - A_{2;1}\right)dx^1 dx^2} & = & \iint{\left( A_{1,2} - A_{2,1}\right)dx^1 dx^2}\\
+  & = & \oint{ \left( A_1 dx^1 + A_2 dx^2 \right)}
+ \end{array}
+\end{equation}
+integrated around the perimeter of the area. Thus we get an integral round a perimeter equated to a flux crossing the 
+surface bounded by the perimeter.
+
+
