@@ -107,4 +107,27 @@ Stokes theorem we get
 integrated around the perimeter of the area. Thus we get an integral round a perimeter equated to a flux crossing the 
 surface bounded by the perimeter.
 
+The result must hold in all coordinate systems,not merely those for which the equations of the surface are  $x^0 = 
+\mbox{ constant}$, $x^3 = \mbox{ constant}$.
 
+To get an invariant way of writing the result, we introduce a general formula for an element of two-dimensional 
+surface. If we take two small contravariant vectors $\xi^\mu$ and $\zeta^\nu$, the element of surface area that they 
+subtend is determined by the antisymmetric two-index tensor
+\[
+ d S^{\mu\nu} = \xi^\mu \zeta^\nu - \xi^\nu \zeta^\mu,
+\]
+Thus, if $\xi^\mu$ has the components $0,dx^1,0,0$ and $\zeta^\nu$ has the components $0,0,dx^2,0$, then $dS^{\mu\nu}$ 
+has the components
+\[
+ dS^{12} = dx^1 dx^2, \, dS^{21} = - dx^1 dx^2,
+\]
+with the other components vanishing. The left-hand side of (\ref{ecuacion 21.6}) becomes
+\[
+ \iint{A_{\mu;\nu}dS^{\mu;\nu}}.
+\]
+The right hand side is evidently $\oint{A_\mu dx^\mu}$, so the formula becomes (\footnote{The first integral on the 
+surface and the second on the perimeter.})
+\begin{equation}
+ \label{ecuacion 21.7}
+ \frac{1}{2} \iint{\left(A_{\mu;\nu} - A_{\nu;\mu}\right)dS^{\mu\nu}} = \oint A_\mu dx^\mu.
+\end{equation}
