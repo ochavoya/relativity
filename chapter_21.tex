@@ -31,4 +31,36 @@ the assumption that $x^0$ is strictly temporal.}). The result is
                                & = & \mbox{ surface integral over boundary of } V
 \end{array} 
 \]
+If there is no current in the boundary of $V$, $\int{A^0\sqrt{}d^3x}$ is constant. 
 
+Those results for a vector $A^\mu$ cannot be taken over to a a tensor with more than on suffix, in general. Take a two 
+suffix tensor $Y^{\mu\nu}$. In flat space we can use Gauss's theorem to express $\int{{Y^{\mu\nu}}_{,\nu}dx^4}$ as a 
+surface integral, but in curved space we cannot in general express $\int{{Y^{\mu\nu}}_{;\nu}\sqrt{}dx^4}$ as a surface 
+integral. An exception occurs for an antisymmetrical tensor $F^{\mu\nu} = -F^{\nu\mu}$.
+
+In this case we have
+\[
+ {F^{\mu\nu}}_{;\sigma} = {F^{\mu\nu}}_{,\sigma} +
+ \Gamma^{\mu}_{\sigma\rho} F^{\rho\nu} +
+ \Gamma^{\nu}_{\sigma\rho} F^{\mu\rho}
+\]
+so
+\[
+ \begin{array}{rcl}
+  {F^{\mu\nu}}_{;\nu} & = & {F^{\mu\nu}}_{,\nu} +
+ \Gamma^{\mu}_{\nu\rho} F^{\rho\nu} +
+ \Gamma^{\nu}_{\nu\rho} F^{\mu\rho} \\
+ & = & {F^{\mu\nu}}_{,\nu} + \sqrt{}^{-1} \sqrt{}_{,\rho} F^{\mu\rho}
+ \end{array}
+\]
+from (\ref{ecuacion 20.6}) (\footnote{And the fact that $\Gamma^{\mu}_{\nu\rho} F^{\rho\nu} \equiv 0$ because 
+$\Gamma^{\mu}_{\nu\rho} = \Gamma^{\mu}_{\rho\nu}$.}). Thus 
+\begin{equation}
+ \label{ecuacion 21.3}
+ {F^{\mu\nu}}_{;\nu} \sqrt{} = \left( {F^{\mu\nu} \sqrt{}} \right)_{,\nu} 
+\end{equation}
+Hence $\int{{F^{\mu\nu}}_{;\nu} \sqrt{}d^4x} = \mbox{ a surface integral}$, and if ${F^{\mu\nu}}_{;\nu} = 0$ we have a 
+conservation law.
+
+In the symmetrical case $Y^{\mu\nu} = Y^{\nu\mu}$ we can get a corresponding equation with an extra term, provided we 
+put one of the suffixes downstairs and deal with ${{Y_\mu}^\nu}_{;\nu}$
