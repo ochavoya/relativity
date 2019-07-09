@@ -26,6 +26,40 @@ omitted.}):
  \mbox{div } E = 4 \pi \rho.
 \end{equation}
 
+We must first put them in four-dimensional form for special relativity. The potentials $A$ and $\phi$ form a 
+four-vector $\kappa^\mu$ in accordance with 
+\[
+k^0 = \phi \mbox{, } \kappa^m = A^m\mbox{, }(m=1,2,3).
+\]
+
+Define 
+\begin{equation}
+\label{ecuacion 23.7}
+ F_{\mu\nu} = \kappa_{\mu,\nu} - \kappa_{\nu,\mu}
+\end{equation}
+Then from (\ref{ecuacion 23.1})(\footnote{\[
+    F^{10} = g^{1\mu}g^{0\nu} F_{\mu\nu} = g^{11}g^{00} F_{10} = - F^{10}.
+\]})
+\[
+ E^1 = - \frac{\partial \kappa^1}{\partial x^0} - \frac{\partial k^0}{\partial x^1}
+     =   \frac{\partial \kappa_1}{\partial x^0} - \frac{\partial k_0}{\partial x^1}
+     =   F_{10}
+     = - F^{10}
+\]
+and from (\ref{ecuacion 23.2})
+\[
+    H^1 =   \frac{\partial \kappa^3}{\partial x^2} - \frac{\partial \kappa^2}{\partial x^3}
+        = - \frac{\partial \kappa_3}{\partial x^2} + \frac{\partial \kappa_2}{\partial x^3}
+        = F_{23} = F^{23}
+\]
+Thus the six components of the antisymmetric tensor $F_{\mu\nu}$ determine the field quantities $E$ and $H$.
+
+From the definition (\ref{ecuacion 23.7})
+\[
+  F_{\mu\nu,\sigma} + F_{\nu\sigma,\mu} + F_{\sigma\mu,\nu} = 0.
+\]
+This gives the Maxwell Equations (\ref{ecuacion 23.3}) and (\ref{ecuacion 23.4}).
+
 
 
 
