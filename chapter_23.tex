@@ -68,7 +68,7 @@ F_{\alpha\beta} =
 F^{\alpha\beta} = 
 \left(
     \begin{array}{cccc}
-         0    &   E_x  &  E_y &   E_z \\
+         0    &   E_x  &  E_y &   E_z \\2
         -E_x  &    0   &  H_z &  -H_y \\
         -E_y  &  -H_z  &   0  &   H_x \\
         -E_z  &   H_y  & -H_x &    0
@@ -79,13 +79,69 @@ F^{\alpha\beta} =
 }
 
 From the definition (\ref{ecuacion 23.7})
+\begin{equation}
+ \label{ecuacion 23.8}
+ F_{\mu\nu,\sigma} + F_{\nu\sigma,\mu} + F_{\sigma\mu,\nu} = 0.
+\end{equation}
+This gives the Maxwell Equations (\ref{ecuacion 23.3}) and (\ref{ecuacion 23.4}). We have
+\begin{equation}
+ \label{ecuacion 23.9}
+ {F^{0\nu}}_{,\nu} = {F^{0m}}_{,m} = -{F^{m0}}_{,m} = \mbox{div } E = 4 \pi \rho
+\end{equation}
+from (\ref{ecuacion 23.6}). Again 
+\begin{equation}
+ \label{ecuacion 23.10}
+ \begin{array}{rcl}
+ {F^{1\nu}}_{,\nu} & = & {F^{10}}_{0} + {F^{12}}_{2} + {F^{13}}_{3} 
+ = -\frac{\partial E^1}{\partial x^0} + \frac{\partial H^{3}}{\partial x^2} - \frac{\partial H^2}{\partial x^3} \\
+ & = & 4 \pi j^1.
+ \end{array}
+\end{equation}
+from (\ref{ecuacion 23.5}). The density of charge $\rho$ and current $j^\mu$ form a four-vector $J^\mu$ in accordance 
+with
 \[
-  F_{\mu\nu,\sigma} + F_{\nu\sigma,\mu} + F_{\sigma\mu,\nu} = 0.
+ J^0 = \rho \, J^m = j^m.
 \]
-This gives the Maxwell Equations (\ref{ecuacion 23.3}) and (\ref{ecuacion 23.4}).
+Thus (\ref{ecuacion 23.9}) and (\ref{ecuacion 23.10}) combine into
+\begin{equation}
+ \label{ecuacion 23.11}
+ {F^{\mu\nu}}_{,\nu} = 4 \pi J^\mu.
+\end{equation}
+In this form the Maxwell equation are put into the four-dimensional form required by special relativity.
 
+To pass to general relativity we must write the equations in covariant form. On account of (\ref{ecuacion 21.5}) we can 
+write (\ref{ecuacion 23.7}) immediately as 
+\[
+ F_{\mu\nu} = \kappa_{\mu;\nu} - \kappa_{\nu;\mu}.
+\]
+This gives us a covariant definition of the field quantities $F_{\mu\nu}$. We have further
+\[
+ F_{\mu\nu;\sigma} = F_{\mu\nu,\sigma} - \Gamma^\alpha_{\mu\sigma} F_{\alpha\nu} 
+                                       - \Gamma^\alpha_{\nu\sigma} F_{\mu\alpha} 
+\]
+Making cyclic permutations of $\mu$, $\nu$, and $\sigma$ and adding the three equations so obtained, we get
+\begin{equation}
+ \label{ecuacion 23.12}
+   F_{\mu\nu;\sigma} + F_{\nu\sigma;\mu} + F_{\sigma\mu;\nu} 
+ = F_{\mu\nu,\sigma} + F_{\nu\sigma,\mu} + F_{\sigma\mu,\nu} = 0,
+\end{equation}
+from (\ref{ecuacion 23.8}). So, this Maxwell equation goes over immediately to the covariant form.
 
-
-
+Finally we must deal with the equations (\ref{ecuacion 23.11}). This is not a valid equation in general relativity and 
+must be replaced with the covariant form
+\begin{equation}
+ \label{ecuacion 23.13}
+ {F^{\mu\nu}}_{;\nu} = 4\pi J^\mu
+\end{equation}
+From (\ref{ecuacion 21.3}), which applies to any antisymmetric two-suffix tensor, we get
+\[
+ \left( F^{\mu\nu} \sqrt{} \right)_{,\nu} = 4 \pi J^\mu \sqrt{}.
+\]
+This leads immediately to
+\[
+ \left( J^\mu \sqrt{} \right)_{\mu} = (4\pi)^{-1} \left( F^{\mu\nu} \sqrt{} \right)_{,\mu\nu} = 0.
+\]
+So we have an equation like (\ref{ecuacion 21.2}), giving us the law of conservation of electricity. The conservation 
+of electricity holds accurately, undisturbed by the curvature of space.
 
 
