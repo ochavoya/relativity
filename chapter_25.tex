@@ -36,3 +36,77 @@ The matter that we are considering will have an energy density $\rho v^0 v^0\sqr
 Then $T^{\mu\nu}\sqrt{}$ gives the density and flux of energy and momentum. $T^{\mu\nu}$ is called the material energy 
 tensor. It is, of course, symmetric.
 
+Can we use $T^{\mu\nu}$ for the matter term in the right-hand side of the Einstein equation (\ref{ecuacion 24.6})? For 
+this purpose we require ${T^{\mu\nu}}_{;\nu} = 0$. We have from the definition (\ref{ecuacion 25.4})
+\[
+    {T^{\mu\nu}}_{;\nu} = \left( \rho v^\mu v^\nu \right)_{;\nu} 
+                        = v^\mu \left( \rho v^\nu \right)_{;\nu} + \rho v^\nu {v^\mu}_{;\nu}
+\]
+The first term here vanishes from the condition for conservation of mass (\ref{ecuacion 25.3}). The second term 
+vanishes if matter moves along geodesics for, if $v^\mu$ is define as a continuous field function instead of having a 
+meaning only on one world line, we have
+\[
+ \frac{d v^\mu}{ds} = {v^\mu}_{;\nu}v^\nu.
+\]
+So (\ref{ecuacion 8.3}) becomes
+\[
+ \left( {v^\mu}_{,\nu} + \Gamma^\mu_{\nu\sigma}v^\sigma \right) v^\nu = 0
+\]
+or
+\begin{equation}
+ \label{ecuacion 25.5}
+ {v^\mu}_{;\nu} v^\nu = 0.
+\end{equation}
+
+We see now that we can substitute the material energy tensor (\ref{ecuacion 25.4}), with a suitable numerical 
+coefficient $k$, into the Einstein equation (24.4). We get
+\begin{equation}
+ \label{ecuacion 25.6}
+ R_{\mu\nu} - \frac{1}{2} g^{\mu\nu} R = k \rho v^\mu v^\nu.
+\end{equation}
+
+We shall now determine the value of the coefficient $k$. We go over to the Newtonian approximation, following the 
+method of Section 16. We note first that, contracting (\ref{ecuacion 25.6}), we get
+\[
+ - R = k \rho .
+\]
+So (\ref{ecuacion 25.6}) may be written 
+\[
+ R^{\mu\nu} = k \rho \left( v^\mu v^\nu - \frac{1}{2} g^{\mu\nu} \right).
+\]
+ 
+With the weak field approximation we get, corresponding to (16.4),
+\[
+ \frac{1}{2} g^{\rho\sigma} \left(
+     g_{\rho\sigma,\mu\nu} - g_{\nu\sigma,\mu\rho} - g_{\mu\rho,\nu\sigma} + g_{\mu\nu,\rho\sigma}
+ \right)
+ = k \rho \left(
+     v_\mu v_\nu - \frac{1}{2}g_{\mu\nu}
+ \right).
+\]
+We now take a static field and a static distribution of matter, so that $v_0 = 1$, $v_m = 0$. Putting $\mu = \nu = 0$ 
+and neglecting second order quantities, we find 
+\[
+ -\frac{1}{2} \nabla^2 g_{00} = \frac{1}{2} k \rho
+\]
+or from (\ref{ecuacion 16.6})
+\[
+ \nabla^2 V = -\frac{1}{2} k \rho
+\]
+to agree with the Poisson equation we must take $k = - 8 \pi$.
+
+The Einstein equation for the presence of a distribution of matter with a velocity field thus reads
+\begin{equation}
+ \label{ecuacion 25.7}
+ R^{\mu\nu} - \frac{1}{2} g^{\mu\nu} R = - 8\pi \rho v^\mu v^\nu.
+\end{equation}
+
+
+
+
+
+
+
+
+
+
